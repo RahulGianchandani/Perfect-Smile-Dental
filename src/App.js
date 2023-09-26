@@ -13,6 +13,8 @@ export default function App() {
     <Router>
       <Header />
       <Routes>
+
+        <Route path="/Perfect-Smile-Dental" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
       </Routes>
