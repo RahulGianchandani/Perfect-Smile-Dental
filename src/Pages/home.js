@@ -7,6 +7,7 @@ import testi6 from '../images/test6.jpg'
 import testi1 from '../images/rona-after.jpeg'
 import quotes from '../images/icons8-quote-100.png'
 import star from '../images/icons8-star-30.png'
+import { TfiArrowCircleRight } from 'react-icons/tfi'
 
 const Home = () => {
     return (
@@ -244,6 +245,10 @@ const Home = () => {
                                     <p className='mt-4 text-end pl-96 '>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
 
                                     <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Barodi Rap.</h6>
+
+                                    <button>
+                                    <TfiArrowCircleRight color='black' />
+                                    </button>
                                 </div>
                                 <div className='col-4 h-96'>
                                     <img src={testi5} className="d-block w-100 h-100" alt="..." />
