@@ -120,15 +120,8 @@ const Home = () => {
             <section id="testimonSec" className=' bg-[#f3f3f3]'>
                 <h1 className='text-center h1 theme-blue-color mb-24 pt-20'>Testimonials</h1>
                 <div className='container pb-36'>
-                    <div id="carouselExampleDark" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-                    {/* <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" className="" aria-current="true" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-  </div> */}
+                    {/* <div id="carouselExampleDark" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+
                         <div className="carousel-inner">
                             <div className="carousel-item h-auto active d-flex gap-28" data-bs-interval="10000">
                                 <div className='col-8 text-end'>
@@ -259,7 +252,82 @@ const Home = () => {
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
                         </button>
+                    </div> */}
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                            <div className='col-8 text-end'>
+                                    <h2 className='h2 mb-20 theme-dark-blue'>Take it from our patients</h2>
+                                    <div>
+                                        <img src={quotes} className='mb-4 inline'></img>
+                                    </div>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <p className='mt-4 text-end pl-96 '>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
+
+                                    <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Rona President.</h6>
+                                </div>
+                                <div className='col-4 h-96'>
+                                    <img src={testi1} className="d-block w-100 h-100" alt="..." />
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                            <div className='col-8 text-end'>
+                                    <h2 className='h2 mb-20 theme-dark-blue'>Take it from our patients</h2>
+                                    <div>
+                                        <img src={quotes} className='mb-4 inline'></img>
+                                    </div>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <p className='mt-4 text-end pl-96 '>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
+
+                                    <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Rona President.</h6>
+                                </div>
+                                <div className='col-4 h-96'>
+                                    <img src={testi2} className="d-block w-100 h-100" alt="..." />
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                            <div className='col-8 text-end'>
+                                    <h2 className='h2 mb-20 theme-dark-blue'>Take it from our patients</h2>
+                                    <div>
+                                        <img src={quotes} className='mb-4 inline'></img>
+                                    </div>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <img className='inline' src={star}></img>
+                                    <p className='mt-4 text-end pl-96 '>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
+
+                                    <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Rona President.</h6>
+                                </div>
+                                <div className='col-4 h-96'>
+                                    <img src={testi3} className="d-block w-100 h-100" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
+
                 </div>
             </section>
         </div>
