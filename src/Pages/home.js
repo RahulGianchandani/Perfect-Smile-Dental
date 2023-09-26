@@ -143,7 +143,9 @@ const Home = () => {
                                     <img className='inline' src={star}></img>
                                     <img className='inline' src={star}></img>
                                     <p className='mt-4 text-end pl-96 '>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
-
+                                    <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <TfiArrowCircleRight color='#3385D7' size={"35"} />
+                                    </button>
                                     <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Rona President.</h6>
                                 </div>
                                 <div className='col-4 h-96'>
@@ -163,7 +165,9 @@ const Home = () => {
                                     <img className='inline' src={star}></img>
                                     <img className='inline' src={star}></img>
                                     <p className='mt-4 text-end pl-96 '>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
-
+                                    <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <TfiArrowCircleRight color='#3385D7' size={"35"} />
+                                    </button>
                                     <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Ricky Malka.</h6>
                                 </div>
                                 <div className='col-4 h-96'>
@@ -183,7 +187,9 @@ const Home = () => {
                                     <img className='inline' src={star}></img>
                                     <img className='inline' src={star}></img>
                                     <p className='mt-4 text-end pl-96 '>It is highly recommended. Professional staff, nice people and wholehearted service</p>
-
+                                    <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <TfiArrowCircleRight color='#3385D7' size={"35"} />
+                                    </button>
                                     <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Fathalla Mreh.</h6>
                                 </div>
                                 <div className='col-4 h-96'>
@@ -203,7 +209,9 @@ const Home = () => {
                                     <img className='inline' src={star}></img>
                                     <img className='inline' src={star}></img>
                                     <p className='mt-4 text-end pl-96 '>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
-
+                                    <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <TfiArrowCircleRight color='#3385D7' size={"35"} />
+                                    </button>
                                     <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Ilan Zahov.</h6>
                                 </div>
                                 <div className='col-4 h-96'>
@@ -225,11 +233,14 @@ const Home = () => {
                                     <p className='mt-4 text-end pl-96 '>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
 
                                     <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Igal Todover.</h6>
+                                    <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <TfiArrowCircleRight color='#3385D7' size={"35"} />
+                                    </button>
                                 </div>
                                 <div className='col-4 h-96'>
                                     <img src={testi6} className="d-block w-100 h-100" alt="..." />
                                 </div>
-
+                              
                             </div>
                             <div className="carousel-item h-auto  d-flex gap-28">
                                 <div className='col-8 text-end'>
@@ -246,8 +257,8 @@ const Home = () => {
 
                                     <h6 className='h5 font-bold mt-4 theme-dark-blue'>— Barodi Rap.</h6>
 
-                                    <button>
-                                    <TfiArrowCircleRight color='black' />
+                                    <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <TfiArrowCircleRight color='#3385D7' size={"35"} />
                                     </button>
                                 </div>
                                 <div className='col-4 h-96'>
