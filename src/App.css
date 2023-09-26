@@ -1,38 +1,317 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Jost", Helvetica, Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.theme-blue-color {
+  color: #3385d7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.theme-dark-blue {
+  color: #1f2e88;
+}
+
+/************ HEADER  ************/
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header a.active {
+  color: #3385d7 !important;
+}
+
+.header #imgDiv img {
+  width: 8rem;
+}
+
+.header.sticky #imgDiv img {
+  filter: brightness(0) invert(1);
+}
+
+.header.sticky {
+  background-color: #000000;
+
+}
+
+.header ul a {
+  font-size: 14px;
+}
+
+/************ HEADER ENDS  ************/
+
+
+/************ FOOTER  ************/
+footer#footer {
+  background-image: url(./images/dentist4-footer-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-color: #000000;
+}
+
+footer #footer-top {
+  padding: 100px 0px;
+}
+
+footer #footer-top section h4 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0px;
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+footer #footer-top section h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #3385d7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer #footer-top section p {
+  font-size: 18px;
+  color: white;
+
 }
+
+footer #footer-top section a {
+  font-size: 18px;
+  color: #3385d7;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+}
+
+footer #footer-top section a:hover {
+  font-size: 18px;
+  color: white;
+
+}
+
+footer #footer-top section img {
+  width: 9rem;
+  /* filter: brightness(0) invert(1); */
+}
+
+footer #footer-bottom {
+  padding: 22px 0px 22px 0px;
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, .1)
+}
+
+/************ FOOTER ENDS  ************/
+
+
+/************ HOME LANDING PAGE   ************/
+
+/******** header   ********/
+
+#homePage header #leftSideHeader {
+  height: 960px;
+  /* width: 100%; */
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: end;
+  text-align: end;
+}
+
+#homePage header #leftSideHeader::before {
+  content: "";
+  background: url(./images/dentist4-slider-bg.webp) no-repeat center center /cover;
+  height: 100%;
+  /* width: 100%; */
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #000000;
+  transform: scaleX(-1);
+  /* filter: brightness(0.4); */
+
+}
+
+#homePage header #leftSideHeader h6 {
+  font-weight: 700;
+  color: rgb(51, 133, 215);
+}
+
+#homePage header #leftSideHeader h1 {
+  font-size: 55px;
+}
+
+#homePage header #leftSideHeader p {
+  width: 40%;
+}
+
+#homePage header #leftSideHeader button {
+  background-color: rgb(51, 133, 215);
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 18px 43px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#homePage header #leftSideHeader button:hover {
+  background-color: #78b1ec;
+}
+
+#homePage header #rightSideHeader {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-color: #3043b8;
+  background-image: url(./images/dentist4-slider-pic1.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/******** services   ********/
+
+#homePage #serviceSec .service {
+  /* height: 400px; */
+  position: relative;
+  overflow: hidden;
+}
+
+#homePage #serviceSec .service::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  /* filter: blur(0px) brightness(0.4); */
+}
+
+#homePage #serviceSec .service1::before {
+  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+}
+#homePage #serviceSec .service2::before {
+  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+}
+#homePage #serviceSec .service3::before {
+  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+}
+#homePage #serviceSec .service4::before {
+  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+}
+#homePage #serviceSec .service5::before {
+  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+}
+#homePage #serviceSec .service6::before {
+  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+}
+
+#homePage #serviceSec .service:hover .mainTextDiv:before {
+  height: 100%;
+  background-position: top;
+}
+
+#homePage #serviceSec .service .mainTextDiv {
+  transform: translateY(300px);
+  transition: 1000ms;
+
+}
+
+#homePage #serviceSec .service .mainTextDiv:before {
+  content: "";
+  z-index: -1;
+  inset: 0;
+  position: absolute;
+  background-image: linear-gradient(0deg, #3385d7, transparent 100%);
+  /* background-position: bottom; */
+  transition: background-position 1s, height 1s;
+  height: 22%;
+  top: 0;
+}
+
+#homePage #serviceSec .service:hover>.mainTextDiv {
+  transform: translateY(0px);
+}
+
+#homePage #serviceSec .service .textDiv {
+  /* opacity: 0; */
+  transition: 500ms;
+}
+
+#homePage #serviceSec .service:hover .textDiv {
+  /* opacity: 1; */
+}
+
+#homePage #serviceSec .service button::before {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 2px;
+  margin-top: -1px;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity .3s;
+  -moz-transition: -moz-transform 0.3s, opacity .3s;
+  transition: transform 0.3s, opacity .3s;
+  pointer-events: none;
+  background: #3385d7
+}
+
+#homePage #serviceSec .service button::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  margin-top: -1px;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity .3s;
+  -moz-transition: -moz-transform 0.3s, opacity .3s;
+  transition: transform 0.3s, opacity .3s;
+  pointer-events: none;
+  background: #3385d7
+}
+
+button:hover::before {
+  transform: rotate(45deg);
+  top: 19px !important;
+  opacity: 0.5;
+  background: #3f3c3c !important;
+}
+
+button:hover::after {
+  transform: rotate(-45deg);
+  bottom: 18px !important;
+  opacity: 0.5;
+  background: #3f3c3c !important;
+}
+
+
+/************ HOME LANDING PAGE ENDS   ************/
