@@ -20,6 +20,7 @@ import trans5A from '../images/transformations/bf5after.png'
 import trans6B from '../images/transformations/bf6before.png'
 import trans6A from '../images/transformations/bf6after.png'
 
+
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from 'react-icons/tfi'
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
 
@@ -325,9 +326,21 @@ const Home = () => {
       </section>
 
       <section id="expSec" className=''>
-        <h1 className='text-center h1 text-white mb-24 pt-32'>Patient Experiences</h1>
+        <h1 className='text-center h1 text-white pt-32'>Patient Experiences</h1>
+        <h1 className='text-center h2 theme-blue-color mb-24 mt-4 '>See what patients have to say about their experience</h1>
         <div className='container pb-36'>
 
+          <div className='row justify-center gap-y-10'>
+            <video width="781" height="440" controls className='col-6' >
+                  <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
+                 </video>
+            <video width="781" height="440" controls className='col-6' >
+                  <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
+                 </video>
+            <video width="781" height="440" controls className='col-6' >
+                  <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
+                 </video>
+          </div>
         </div>
       </section>
 
@@ -336,40 +349,40 @@ const Home = () => {
         <div className='container pb-36'>
           {/* <span>Before</span>
           <span>After</span> */}
-          <div className='grid grid-cols-2 gap-y-20 justify-items-center'> 
+          <div className='grid grid-cols-2 gap-y-20 justify-items-center'>
 
-          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
-          itemOne={<ReactCompareSliderImage src={trans1B}  className='transform-images transform-img-before '  alt="Image one" />}
-          itemTwo={<ReactCompareSliderImage src={trans1A}  className='transform-images transform-img-after ' alt="Image two" />}
-          />
-          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
-          itemOne={<ReactCompareSliderImage src={trans2B}  className='transform-images transform-img-before '  alt="Image one" />}
-          itemTwo={<ReactCompareSliderImage src={trans2A}  className='transform-images transform-img-after ' alt="Image two" />}
-          />
-          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
-          itemOne={<ReactCompareSliderImage src={trans3B}  className='transform-images transform-img-before '  alt="Image one" />}
-          itemTwo={<ReactCompareSliderImage src={trans3A}  className='transform-images transform-img-after ' alt="Image two" />}
-          />
-          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
-          itemOne={<ReactCompareSliderImage src={trans4B}  className='transform-images transform-img-before '  alt="Image one" />}
-          itemTwo={<ReactCompareSliderImage src={trans4A}  className='transform-images transform-img-after ' alt="Image two" />}
-          />
-          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
-          itemOne={<ReactCompareSliderImage src={trans5B}  className='transform-images transform-img-before '  alt="Image one" />}
-          itemTwo={<ReactCompareSliderImage src={trans5A}  className='transform-images transform-img-after ' alt="Image two" />}
-          />
-          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
-          itemOne={<ReactCompareSliderImage src={trans6B}  className='transform-images transform-img-before '  alt="Image one" />}
-          itemTwo={<ReactCompareSliderImage src={trans6A}  className='transform-images transform-img-after ' alt="Image two" />}
-          />
-        </div>
+            <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+              style={{ filter: "brightness(1) !important" }}
+              itemOne={<ReactCompareSliderImage src={trans1B} className='transform-images transform-img-before ' alt="Image one" />}
+              itemTwo={<ReactCompareSliderImage src={trans1A} className='transform-images transform-img-after ' alt="Image two" />}
+            />
+            <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+              style={{ filter: "brightness(1) !important" }}
+              itemOne={<ReactCompareSliderImage src={trans2B} className='transform-images transform-img-before ' alt="Image one" />}
+              itemTwo={<ReactCompareSliderImage src={trans2A} className='transform-images transform-img-after ' alt="Image two" />}
+            />
+            <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+              style={{ filter: "brightness(1) !important" }}
+              itemOne={<ReactCompareSliderImage src={trans3B} className='transform-images transform-img-before ' alt="Image one" />}
+              itemTwo={<ReactCompareSliderImage src={trans3A} className='transform-images transform-img-after ' alt="Image two" />}
+            />
+            <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+              style={{ filter: "brightness(1) !important" }}
+              itemOne={<ReactCompareSliderImage src={trans4B} className='transform-images transform-img-before ' alt="Image one" />}
+              itemTwo={<ReactCompareSliderImage src={trans4A} className='transform-images transform-img-after ' alt="Image two" />}
+            />
+            <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+              style={{ filter: "brightness(1) !important" }}
+              itemOne={<ReactCompareSliderImage src={trans5B} className='transform-images transform-img-before ' alt="Image one" />}
+              itemTwo={<ReactCompareSliderImage src={trans5A} className='transform-images transform-img-after ' alt="Image two" />}
+            />
+            <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+              style={{ filter: "brightness(1) !important" }}
+              itemOne={<ReactCompareSliderImage src={trans6B} className='transform-images transform-img-before ' alt="Image one" />}
+              itemTwo={<ReactCompareSliderImage src={trans6A} className='transform-images transform-img-after ' alt="Image two" />}
+            />
           </div>
+        </div>
       </section>
 
     </div>

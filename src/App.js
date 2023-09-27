@@ -8,6 +8,7 @@ import {
 import Home from './Pages/home';
 import Footer from './Components/Footer';
 import Transformations from './Pages/transformations';
+import Contact from './Pages/contact';
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/transformations" element={<Transformations />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

@@ -29,8 +29,14 @@ const Header = () => {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <NavLink
-                            to="/contact"
+                            to="/appointment"
                             className={"text-white text-decoration-none fw-bold"}
+                        >
+                            BOOK APPOINTMENT
+                        </NavLink>
+                        <NavLink
+                            to="/contact"
+                            className={"text-white text-decoration-none ms-5 fw-bold"}
                         >
                             CONTACT US
                         </NavLink>

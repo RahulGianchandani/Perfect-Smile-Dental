@@ -20,7 +20,8 @@ import trans5A from '../images/transformations/bf5after.png'
 import trans6B from '../images/transformations/bf6before.png'
 import trans6A from '../images/transformations/bf6after.png'
 
-import { TfiArrowCircleLeft, TfiArrowCircleRight } from 'react-icons/tfi'
+import serviceGirl from '../images/dentist4-services-pic5.webp'
+
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
 
 const Transformations = () => {
@@ -43,7 +44,7 @@ const Transformations = () => {
 
      
 
-      <section id="transformSec" className=''>
+      <section id="transformSec" className='bg-[#fff5f5]'>
         <h1 className='text-center h1 theme-blue-color  mb-24 pt-32'>Patient Transformations</h1>
         <div className='container pb-36'>
           {/* <span>Before</span>
@@ -51,38 +52,50 @@ const Transformations = () => {
           <div className='grid grid-cols-2 gap-y-20 justify-items-center'> 
 
           <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
           itemOne={<ReactCompareSliderImage src={trans1B}  className='transform-images transform-img-before '  alt="Image one" />}
           itemTwo={<ReactCompareSliderImage src={trans1A}  className='transform-images transform-img-after ' alt="Image two" />}
           />
           <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
           itemOne={<ReactCompareSliderImage src={trans2B}  className='transform-images transform-img-before '  alt="Image one" />}
           itemTwo={<ReactCompareSliderImage src={trans2A}  className='transform-images transform-img-after ' alt="Image two" />}
           />
           <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
           itemOne={<ReactCompareSliderImage src={trans3B}  className='transform-images transform-img-before '  alt="Image one" />}
           itemTwo={<ReactCompareSliderImage src={trans3A}  className='transform-images transform-img-after ' alt="Image two" />}
           />
           <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
           itemOne={<ReactCompareSliderImage src={trans4B}  className='transform-images transform-img-before '  alt="Image one" />}
           itemTwo={<ReactCompareSliderImage src={trans4A}  className='transform-images transform-img-after ' alt="Image two" />}
           />
           <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
           itemOne={<ReactCompareSliderImage src={trans5B}  className='transform-images transform-img-before '  alt="Image one" />}
           itemTwo={<ReactCompareSliderImage src={trans5A}  className='transform-images transform-img-after ' alt="Image two" />}
           />
           <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
-          style={{ filter: "brightness(1) !important" }} 
           itemOne={<ReactCompareSliderImage src={trans6B}  className='transform-images transform-img-before '  alt="Image one" />}
           itemTwo={<ReactCompareSliderImage src={trans6A}  className='transform-images transform-img-after ' alt="Image two" />}
           />
         </div>
           </div>
       </section>
+
+      <section id="appointSec" className=''>
+            <div className='container py-32 max-w-[1200px]'>
+             
+                <div className='bg-[#3043b8] appointDiv '>
+                <div className='d-flex gap-9'>
+                  <div id='imgDiv' className='h-96 col-6'>
+                  <img src={serviceGirl} className='w-100 h-100' />
+                                </div>
+                                <div className='rightSideText'>
+                      <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
+                      <h2 className=' text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
+                      <button>MAKE AN APPOINTMENT</button>
+                                </div>
+                </div>
+                </div>
+            </div>
+        </section>
 
     </div>
   )

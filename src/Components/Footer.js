@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../images/logo.svg'
+import { ImWhatsapp } from 'react-icons/im'
+
+
 const Footer = () => {
-
-
-
-
     return (
         <footer id='footer'>
             <div id='footer-top'>
@@ -28,11 +27,16 @@ const Footer = () => {
                         <section>
                             <h4 className='mb-3'>Our address</h4>
                             <h5 className='mb-3'>The Center</h5>
-                            <p className='mb-0'>96 Zeytim St</p>
-                            <p className='mb-0'>Givat Shmuel</p>
-                            <p className='mb-3'>Or building in Givat</p>
+                            <a href='https://maps.google.com/maps?width=700&height=440&hl=en&q=%D7%A2%D7%91%D7%A2%D7%AA%20%D7%A9%D7%9E%D7%95%D7%90%D7%9C%2096%D7%94%D7%96%D7%99%D7%AA%D7%99%D7%9D+
+                                (Title)&ie=UTF8&t=&z=10&iwloc=B&output=embed' target='_blank'>
+                                <p className='mb-0'>96 Zeytim St</p>
+                                <p className='mb-0'>Givat Shmuel</p>
+                                <p className='mb-3'>Or building in Givat</p>
+                            </a>
                             <h5 className='mb-3'>North</h5>
+                            <a href='https://www.google.com/maps/place/Northern+Road%2FTamra/@32.8644145,35.1841213,17z/data=!3m1!4b1!4m5!3m4!1s0x151dca9a3e03c6c5:0x47af1042f792feb1!8m2!3d32.86441!4d35.18631' target='_blank'>
                             <p className='mb-0'>Tamra North Road</p>
+                            </a>
                         </section>
 
                     </div>
@@ -42,6 +46,7 @@ const Footer = () => {
             <div id='footer-bottom'>
                 <p>All Rights Reserved — © Copyright PerfectSmile 2023.</p>
             </div>
+            <a href="https://wa.me/+972526866442" target="_blank"><ImWhatsapp size={40} className='whatsappICON' color="white" /></a>
         </footer>
     )
 }
