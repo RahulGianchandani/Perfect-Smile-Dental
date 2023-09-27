@@ -35,10 +35,10 @@ const Header = () => {
                             CONTACT US
                         </NavLink>
                         <NavLink
-                            to="/before-after-images"
+                            to="/transformations"
                             className={"text-white text-decoration-none ms-5 fw-bold"}
                         >
-                            BEFORE AND AFTER IMAGES
+                            TRANSFORMATIONS
                         </NavLink>
                         <NavLink
                             to="/"

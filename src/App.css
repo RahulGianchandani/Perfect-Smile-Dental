@@ -215,18 +215,23 @@ footer #footer-bottom {
 #homePage #serviceSec .service1::before {
   background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
 }
+
 #homePage #serviceSec .service2::before {
   background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
 }
+
 #homePage #serviceSec .service3::before {
   background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
 }
+
 #homePage #serviceSec .service4::before {
   background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
 }
+
 #homePage #serviceSec .service5::before {
   background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
 }
+
 #homePage #serviceSec .service6::before {
   background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
 }
@@ -318,4 +323,70 @@ button:hover::after {
 #homePage #testimonSec .testiImg img {
   height: 700px;
 }
+
+/****** patient experiences *****/
+#homePage #expSec {
+  background-color: #3043b8;
+  background-image: url(./images/dentist4-section-bg8.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/****** patient transformations *****/
+
+#homePage #transformSec .transform-img-mainDiv {
+  width: 623px;
+  transition: 600ms;
+  height: 212px;
+}
+
+#homePage #transformSec .transform-img-mainDiv:hover {
+  /* filter: brightness(0.7); */
+}
+
+
+#homePage #transformSec .transform-img-mainDiv:hover::before,
+#homePage #transformSec .transform-img-mainDiv:hover::after {
+  opacity: 1;
+}
+
+#homePage #transformSec .transform-img-mainDiv::before {
+  content: "Before";
+  color: #fff;
+  opacity: 0;
+  transition: 600ms;
+  font-size: 13px;
+  letter-spacing: .1em;
+  z-index: 2;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 38px;
+  padding: 0 20px;
+  border-radius: 2px;
+  top: 100px;
+  left: 10px;
+}
+
+#homePage #transformSec .transform-img-mainDiv::after {
+  content: "After";
+  opacity: 0;
+  transition: 600ms;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: .1em;
+  z-index: 2;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 38px;
+  padding: 0 20px;
+  top: 100px;
+  right: 0;
+  border-radius: 2px;
+  right: 10px;
+}
+
+#homePage #transformSec .transform-images {
+  object-fit: fill !important;
+}
+
 /************ HOME LANDING PAGE ENDS   ************/

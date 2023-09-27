@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Home from './Pages/home';
 import Footer from './Components/Footer';
+import Transformations from './Pages/transformations';
+
 
 export default function App() {
   return (
@@ -17,6 +19,7 @@ export default function App() {
         <Route path="/Perfect-Smile-Dental" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
+        <Route path="/transformations" element={<Transformations />} />
       </Routes>
       <Footer />
     </Router>

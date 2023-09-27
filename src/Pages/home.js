@@ -7,13 +7,27 @@ import testi6 from '../images/test6.jpg'
 import testi1 from '../images/rona-after.jpeg'
 import quotes from '../images/icons8-quote-100.png'
 import star from '../images/icons8-star-30.png'
+import trans1B from '../images/transformations/bf1before.png'
+import trans1A from '../images/transformations/bf1after.png'
+import trans2B from '../images/transformations/bf2before.png'
+import trans2A from '../images/transformations/bf2after.png'
+import trans3B from '../images/transformations/bf3before.png'
+import trans3A from '../images/transformations/bf3after.png'
+import trans4B from '../images/transformations/bf4before.png'
+import trans4A from '../images/transformations/bf4after.png'
+import trans5B from '../images/transformations/bf5before.png'
+import trans5A from '../images/transformations/bf5after.png'
+import trans6B from '../images/transformations/bf6before.png'
+import trans6A from '../images/transformations/bf6after.png'
+
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from 'react-icons/tfi'
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
 
 const Home = () => {
   return (
     <div id='homePage'>
       <header className='d-flex'>
-        <div id='leftSideHeader' className='col-7'>
+        <div id='leftSideHeader' className='col-7 w-'>
           <h6 className='mb-5' >WELCOME TO OUR CLINIC</h6>
           <h1 className='mb-0 text-white'>Make your</h1>
           <h1 className='text-white mb-5'>smile Shine</h1>
@@ -133,7 +147,7 @@ const Home = () => {
             <div className="carousel-inner">
               <div className="carousel-item h-auto active d-flex gap-28" data-bs-interval="10000">
                 <div className='col-7 text-end'>
-                  <h1 className='text-center h1 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
                     <img src={quotes} className='mb-4 inline'></img>
@@ -160,7 +174,7 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28" data-bs-interval="2000">
                 <div className='col-7 text-end'>
-                  <h1 className='text-center h1 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
                     <img src={quotes} className='mb-4 inline'></img>
@@ -187,7 +201,7 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28">
                 <div className='col-7 text-end'>
-                  <h1 className='text-center h1 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
                     <img src={quotes} className='mb-4 inline'></img>
@@ -214,7 +228,7 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28">
                 <div className='col-7 text-end'>
-                  <h1 className='text-center h1 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
                     <img src={quotes} className='mb-4 inline'></img>
@@ -241,7 +255,7 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28">
                 <div className='col-7 text-end'>
-                  <h1 className='text-center h1 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
                     <img src={quotes} className='mb-4 inline'></img>
@@ -269,7 +283,7 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28">
                 <div className='col-7 text-end'>
-                  <h1 className='text-center h1 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
                     <img src={quotes} className='mb-4 inline'></img>
@@ -309,6 +323,55 @@ const Home = () => {
 
         </div>
       </section>
+
+      <section id="expSec" className=''>
+        <h1 className='text-center h1 text-white mb-24 pt-32'>Patient Experiences</h1>
+        <div className='container pb-36'>
+
+        </div>
+      </section>
+
+      <section id="transformSec" className=''>
+        <h1 className='text-center h1 theme-blue-color  mb-24 pt-32'>Patient Transformations</h1>
+        <div className='container pb-36'>
+          {/* <span>Before</span>
+          <span>After</span> */}
+          <div className='grid grid-cols-2 gap-y-20 justify-items-center'> 
+
+          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+          style={{ filter: "brightness(1) !important" }} 
+          itemOne={<ReactCompareSliderImage src={trans1B}  className='transform-images transform-img-before '  alt="Image one" />}
+          itemTwo={<ReactCompareSliderImage src={trans1A}  className='transform-images transform-img-after ' alt="Image two" />}
+          />
+          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+          style={{ filter: "brightness(1) !important" }} 
+          itemOne={<ReactCompareSliderImage src={trans2B}  className='transform-images transform-img-before '  alt="Image one" />}
+          itemTwo={<ReactCompareSliderImage src={trans2A}  className='transform-images transform-img-after ' alt="Image two" />}
+          />
+          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+          style={{ filter: "brightness(1) !important" }} 
+          itemOne={<ReactCompareSliderImage src={trans3B}  className='transform-images transform-img-before '  alt="Image one" />}
+          itemTwo={<ReactCompareSliderImage src={trans3A}  className='transform-images transform-img-after ' alt="Image two" />}
+          />
+          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+          style={{ filter: "brightness(1) !important" }} 
+          itemOne={<ReactCompareSliderImage src={trans4B}  className='transform-images transform-img-before '  alt="Image one" />}
+          itemTwo={<ReactCompareSliderImage src={trans4A}  className='transform-images transform-img-after ' alt="Image two" />}
+          />
+          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+          style={{ filter: "brightness(1) !important" }} 
+          itemOne={<ReactCompareSliderImage src={trans5B}  className='transform-images transform-img-before '  alt="Image one" />}
+          itemTwo={<ReactCompareSliderImage src={trans5A}  className='transform-images transform-img-after ' alt="Image two" />}
+          />
+          <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
+          style={{ filter: "brightness(1) !important" }} 
+          itemOne={<ReactCompareSliderImage src={trans6B}  className='transform-images transform-img-before '  alt="Image one" />}
+          itemTwo={<ReactCompareSliderImage src={trans6A}  className='transform-images transform-img-after ' alt="Image two" />}
+          />
+        </div>
+          </div>
+      </section>
+
     </div>
   )
 }
