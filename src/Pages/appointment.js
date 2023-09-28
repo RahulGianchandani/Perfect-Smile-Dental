@@ -25,7 +25,7 @@ import { Step, Stepper } from 'react-form-stepper';
 import moment from 'moment'
 
 const Appointment = () => {
-  const [currentPage, setCurrentPage] = useState(2);
+  const [currentPage, setCurrentPage] = useState(0);
   const [serviceSelect, setServiceSelect] = useState(0);
   const [serviceName, setServiceName] = useState("");
   const [clinicName, setClinicName] = useState("");
