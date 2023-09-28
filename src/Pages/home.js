@@ -27,23 +27,23 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 const Home = () => {
   return (
     <div id='homePage'>
-      <header className='d-flex'>
-        <div id='leftSideHeader' className='col-7 w-'>
+      <header className='d-flex max-sm:flex-col-reverse'>
+        <div id='leftSideHeader' className='col-7 p-4 max-sm:w-auto'>
           <h6 className='mb-5' >WELCOME TO OUR CLINIC</h6>
           <h1 className='mb-0 text-white'>Make your</h1>
           <h1 className='text-white mb-5'>smile Shine</h1>
           <p className='text-white fw-bold'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
           <button>MAKE AN APPOINTMENT</button>
         </div>
-        <div id='rightSideHeader' className='col-5'>
+        <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
         </div>
       </header>
 
       <section id='serviceSec'>
-        <h1 className='text-center h1 theme-blue-color mb-24 pt-32'>Our Services</h1>
+        <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>Our Services</h1>
         <div className='container pb-36'>
-          <div id='treatments' className='grid grid-cols-3 gap-2'>
+          <div id='treatments' className='grid grid-cols-3 gap-2 max-sm:grid-cols-1'>
             <div className='service   service1  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 mt-3 mb-6'>Mouth dental implant</h6>
@@ -58,9 +58,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='service   service1  duration-300'>
+            <div className='service   service2  duration-300'>
               <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 mt-3 mb-6'>BASAL GRAFT</h6>
+                <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>BASAL GRAFT</h6>
                 <div className='text-white text-center textDiv '>
                   <h6 className='h4 mb-4'>Treatment description</h6>
                   <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -73,9 +73,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='service   service1  duration-300'>
+            <div className='service   service3  duration-300'>
               <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 mt-3 mb-6'>Zirconia crowns</h6>
+                <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>Zirconia crowns</h6>
                 <div className='text-white text-center textDiv '>
                   <h6 className='h4 mb-4'>Treatment description</h6>
                   <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -87,9 +87,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='service   service1  duration-300'>
+            <div className='service   service4  duration-300'>
               <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 mt-3 mb-6'>CT scan</h6>
+                <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>CT scan</h6>
                 <div className='text-white text-center textDiv '>
                   <h6 className='h4 mb-4'>Treatment description</h6>
                   <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -101,7 +101,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='service   service1  duration-300'>
+            <div className='service   service5  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 mt-3 mb-6'>Transparent orthodontics</h6>
                 <div className='text-white text-center textDiv '>
@@ -115,7 +115,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='service   service1  duration-300'>
+            <div className='service   service6  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 mt-3 mb-6'>Panorama photography</h6>
                 <div className='text-white text-center textDiv '>
@@ -146,8 +146,8 @@ const Home = () => {
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div className="carousel-inner">
-              <div className="carousel-item h-auto active d-flex gap-28" data-bs-interval="10000">
-                <div className='col-7 text-end'>
+              <div className="carousel-item h-auto active d-flex gap-28 max-sm:gap-4" data-bs-interval="10000">
+                <div className='col-sm-7 text-end max-sm:p-4'>
                   <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
@@ -158,7 +158,7 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 '>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Rona President.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -169,12 +169,12 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi1} className="d-block w-100" alt="..." />
+                  <img src={testi1} className="d-block w-100 h-[700px] max-xl:h-[800px]" alt="..." />
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28" data-bs-interval="2000">
-                <div className='col-7 text-end'>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4" data-bs-interval="2000">
+                <div className='col-sm-7 text-end max-sm:p-4'>
                   <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
@@ -185,7 +185,7 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 '>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Ricky Malka.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -196,12 +196,12 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi3} className="d-block w-100" alt="..." />
+                  <img src={testi3} className="d-block w-100 h-[700px] max-xl:h-[800px]" alt="..." />
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28">
-                <div className='col-7 text-end'>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
+                <div className='col-sm-7 text-end max-sm:p-4'>
                   <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
@@ -212,7 +212,7 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 '>It is highly recommended. Professional staff, nice people and wholehearted service</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>It is highly recommended. Professional staff, nice people and wholehearted service</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Fathalla Mreh.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -223,12 +223,12 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi2} className="d-block w-100" alt="..." />
+                  <img src={testi2} className="d-block w-100 h-[700px] max-xl:h-[800px]" alt="..." />
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28">
-                <div className='col-7 text-end'>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
+                <div className='col-sm-7 text-end max-sm:p-4'>
                   <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
@@ -239,7 +239,7 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 '>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Ilan Zahov.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -250,12 +250,12 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi4} className="d-block w-100" alt="..." />
+                  <img src={testi4} className="d-block w-100 h-[700px] max-xl:h-[800px]" alt="..." />
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28">
-                <div className='col-7 text-end'>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
+                <div className='col-sm-7 text-end max-sm:p-4'>
                   <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
@@ -266,7 +266,7 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 '>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Igal Todover.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -278,12 +278,12 @@ const Home = () => {
 
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi6} className="d-block w-100" alt="..." />
+                  <img src={testi6} className="d-block w-100 h-[700px] max-xl:h-[800px]" alt="..." />
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28">
-                <div className='col-7 text-end'>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
+                <div className='col-sm-7 text-end max-sm:p-4'>
                   <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
                   <div>
@@ -294,7 +294,7 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 '>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Barodi Rap.</h6>
 
@@ -306,7 +306,7 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi5} className="d-block w-100" alt="..." />
+                  <img src={testi5} className="d-block w-100 h-[700px] max-xl:h-[800px]" alt="..." />
                 </div>
 
               </div>
@@ -330,14 +330,14 @@ const Home = () => {
         <h1 className='text-center h2 theme-blue-color mb-24 mt-4 '>See what patients have to say about their experience</h1>
         <div className='container pb-36'>
 
-          <div className='row justify-center gap-y-10'>
-            <video width="781" height="440" controls className='col-6' >
+          <div className='row justify-center gap-y-10 '>
+            <video width="781" height="440" controls className='col-sm-6' >
                   <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
                  </video>
-            <video width="781" height="440" controls className='col-6' >
+            <video width="781" height="440" controls className='col-sm-6' >
                   <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
                  </video>
-            <video width="781" height="440" controls className='col-6' >
+            <video width="781" height="440" controls className='col-sm-6' >
                   <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
                  </video>
           </div>
@@ -349,7 +349,7 @@ const Home = () => {
         <div className='container pb-36'>
           {/* <span>Before</span>
           <span>After</span> */}
-          <div className='grid grid-cols-2 gap-y-20 justify-items-center'>
+          <div className='grid grid-cols-2 gap-y-20 justify-items-center max-xl:grid-cols-1 max-xl:gap-y-10'>
 
             <ReactCompareSlider className='transform-img-mainDiv ' onlyHandleDraggable={true}
               style={{ filter: "brightness(1) !important" }}

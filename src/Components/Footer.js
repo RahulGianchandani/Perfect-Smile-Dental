@@ -8,15 +8,15 @@ const Footer = () => {
         <footer id='footer'>
             <div id='footer-top'>
                 <div className='container'>
-                    <div className='d-flex justify-content-between align-items-center align-content-center text-center px-72'>
-                        <section className=''>
+                    <div className='d-flex justify-content-between align-items-center align-content-center text-center px-72 max-xl:px-12 max-sm:flex-col'>
+                        <section className='p-2'>
                             <h4 className=' mb-3'>Opening hours</h4>
                             <h5 className=' mb-3'>Monday - Friday</h5>
                             <p className=' mb-3'>6:00 AM - 10:00 AM</p>
                             <h5 className=' mb-3'>Saturday</h5>
                             <p className=' mb-3'>8:00 AM - 4:00 PM</p>
                         </section>
-                        <section>
+                        <section className='p-2'>
                             <img src={logo} className='mb-4 inline' />
                             <h4 className='mb-3'>Call Us</h4>
                             <a className=' ' href="tel:035-505-448">035-505-448</a>
@@ -24,7 +24,7 @@ const Footer = () => {
                             <h4 className='mb-3'>Write a message</h4>
                             <a href="mailto:perfect.smile.israel@gmail.com">perfect.smile.israel@gmail.com</a>
                         </section>
-                        <section>
+                        <section className='p-2'>
                             <h4 className='mb-3'>Our address</h4>
                             <h5 className='mb-3'>The Center</h5>
                             <a href='https://maps.google.com/maps?width=700&height=440&hl=en&q=%D7%A2%D7%91%D7%A2%D7%AA%20%D7%A9%D7%9E%D7%95%D7%90%D7%9C%2096%D7%94%D7%96%D7%99%D7%AA%D7%99%D7%9D+

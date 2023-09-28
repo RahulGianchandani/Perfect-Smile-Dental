@@ -117,7 +117,8 @@ footer #footer-bottom {
   color: white;
   justify-content: center;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(255, 255, 255, .1)
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  text-align: center;
 }
 
 footer .whatsappICON {
@@ -205,6 +206,7 @@ footer .whatsappICON {
   background-image: url(./images/dentist4-slider-pic1.webp);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
 }
 
 /******** services   ********/
@@ -256,7 +258,6 @@ footer .whatsappICON {
 #homePage #serviceSec .service .mainTextDiv {
   transform: translateY(300px);
   transition: 1000ms;
-
 }
 
 #homePage #serviceSec .service .mainTextDiv:before {
@@ -333,7 +334,7 @@ button:hover::after {
 /*******  testimonials *********/
 
 #homePage #testimonSec .testiImg img {
-  height: 700px;
+  /* height: 700px; */
 }
 
 /****** patient experiences *****/
@@ -447,7 +448,8 @@ button:hover::after {
 }
 
 
-#contactPage #formSec input[type=text],
+ #formSec input[type=text],
+ #formSec input[type=email],
 select,
 textarea {
   width: 100%;
@@ -462,8 +464,8 @@ textarea {
 
 }
 
-#contactPage #formSec input:focus,
-#contactPage #formSec textarea:focus {
+ #formSec input:focus, 
+ #formSec textarea:focus {
   color: #3385d7;
   background-color: rgba(212, 228, 246, 1) !important;
   border-color: #d5e5ee;
@@ -473,7 +475,7 @@ textarea {
 
 }
 
-#contactPage #formSec input[type=submit] {
+ #formSec input[type=submit] {
   background-color: #3385d7;
   padding: 16px 42px;
   border-width: 0px;
@@ -487,11 +489,11 @@ textarea {
   cursor: pointer;
 }
 
-#contactPage #formSec input[type=submit]:hover {
+ #formSec input[type=submit]:hover {
   background-color: #5ea0e8;
 }
 
-#contactPage #formSec form {
+ #formSec form {
   padding: 80px 40px 0px;
   background-color: #ffffff;
   margin-top: -60px;
@@ -506,14 +508,13 @@ textarea {
 
 
 /************ TRANSFORMATIONS PAGE STARTS   ************/
- #appointSec .appointDiv {
+#appointSec .appointDiv {
   padding: 60px 5% 70px;
   background-color: #3043b8;
   border-radius: 60px
+}
 
- } 
-
-  #appointSec .appointDiv button {
+#appointSec .appointDiv button {
   background-color: rgb(51, 133, 215);
   margin-top: 30px;
   font-weight: 600;
@@ -525,8 +526,119 @@ textarea {
   transition: 0.5s;
 }
 
- #appointSec .appointDiv button:hover {
+#appointSec .appointDiv button:hover {
   background-color: #78b1ec;
 }
 
 /************ TRANSFORMATIONS PAGE ENDS   ************/
+
+
+
+/************ APPOINTMENT PAGE STARTS   ************/
+#appointFormSec #nxtBtn {
+  background-color: rgb(51, 133, 215);
+  margin-top: 40px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#appointFormSec #prvBtn {
+  background-color: #8d8d8d;
+  margin-top: 40px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#homePage #appointFormSec #serviceSec .service .mainTextDiv {
+  transform: translateY(130px);
+  transition: 1000ms;
+}
+
+#homePage #appointFormSec #serviceSec .service .mainTextDiv:before {
+  height: 200%;
+}
+
+#homePage #appointFormSec #serviceSec .service:hover, #homePage #appointFormSec #DtLocSec .maps:hover {
+  filter: brightness(0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+#homePage #appointFormSec .SelectedService {
+  filter: brightness(0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  border: solid #1f2e88;
+
+}
+
+#homePage #appointFormSec #DtLocSec .mapsDiv:before{
+  content: "";
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  /* background-color: #000000; */
+   cursor: pointer;
+   transition: 300ms;
+}
+#homePage #appointFormSec #DtLocSec .mapsDiv:hover:before{
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#homePage #appointFormSec #formSec form{
+  transform: translateY(0px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+#appointFormSec .StepButton-d2-0-2-8.active,
+#appointFormSec .StepButton-d6-0-2-18.active,
+#appointFormSec .StepButton-d10-0-2-32.active {
+  background-color: #3385d7;
+}
+
+#appointFormSec .StepButton-d2-0-2-8.completed,
+#appointFormSec .StepButton-d6-0-2-18.completed,
+#appointFormSec .StepButton-d10-0-2-32.completed {
+  background-color: #1f2e88;
+}
+
+
+
+/************ APPOINTMENT PAGE ENDS   ************/
+
+
+
+/* media query */
+@media (width < 565px) {
+  #homePage #transformSec .transform-img-mainDiv {
+    width: auto;
+    transition: 600ms;
+    height: 212px;
+  }
+
+  footer #footer-bottom {
+    padding: 22px 10px 22px 10px;
+  }
+
+  .testiImg {
+    display: none;
+  }
+
+  #homePage header #leftSideHeader {
+    height: auto;
+  }
+
+  #homePage header #leftSideHeader p {
+    width: auto;
+  }
+}

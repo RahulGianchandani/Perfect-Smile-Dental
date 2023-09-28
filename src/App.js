@@ -9,6 +9,7 @@ import Home from './Pages/home';
 import Footer from './Components/Footer';
 import Transformations from './Pages/transformations';
 import Contact from './Pages/contact';
+import Appointment from './Pages/appointment';
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/transformations" element={<Transformations />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/appointment" element={<Appointment />} />
       </Routes>
       <Footer />
     </Router>
