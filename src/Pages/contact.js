@@ -33,18 +33,18 @@ const Contact = () => {
     <div id='contactPage'>
       <header >
         <div className='container max-w-[1350px]'>
-          <div className='d-flex'>
-            <div className='leftSideImg col-7'>
+          <div className='d-flex max-md:block'>
+            <div className='leftSideImg col-md-7'>
               <div id='imgBox'>
                 <img src={contactImg} />
               </div>
             </div>
-            <div className='rightSideText col-5'>
+            <div className='rightSideText col-md-5 max-md:text-center max-md:mt-5'>
               <h6 className='mb-2 ' >CONTACT US</h6>
               <h1 className='mb-0 text-white'>Leave us a </h1>
               <h1 className='text-white mb-5'>message</h1>
-              <p className='text-white fw-bold pl-40'>lorep sadsa sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-              <div className="d-flex mt-5 text-center justify-end ">
+              <p className='text-white fw-bold md:pl-40'>lorep sadsa sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
+              <div className="d-flex mt-5 text-center max-md:justify-center justify-end ">
                 <div>
                   <img src={phone} className='inline'></img>
                   <p className="text-white w-100 mb-3 mt-4">
@@ -69,10 +69,10 @@ const Contact = () => {
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.276234777326!2d35.18631!3d32.86441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151dca9a3e03c6c5%3A0x47af1042f792feb1!2sNorthern%20Road%2FTamra!5e0!3m2!1sen!2s!4v1695833819264!5m2!1sen!2s" width="100%" height="500px" className=' bottom-0' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
 
-      <section id='formSec' className=' bg-[#ffffff12] h-[490px]'>
+      <section id='formSec' className=' bg-[#ffffff12] lg:h-[490px]'>
         <div className='container pt-20 pb-10'>
-          <div className='d-flex justify-center gap-16'>
-            <form className='col-6'>
+          <div className='d-flex  justify-center max-md:flex-wrap gap-16'>
+            <form className='col-12 col-md-8 col-lg-8 col-xl-6'>
               {/* <label for="fname">First Name</label> */}
               <input type="text" id="fname" name="firstname" placeholder="Your name.." />
               {/* <label for="lname">Last Name</label> */}
@@ -85,7 +85,7 @@ const Contact = () => {
               <textarea id="subject" className=' h-40' name="subject" placeholder="Write message.."></textarea>
               <input type="submit" value="SEND A MESSAGE" className='mb-16 w-100 block' />
             </form>
-            <div id='addressDiv col-3 '>
+            <div id='addressDiv  ' className='col-4 col-md-2 col-lg-2 col-xl-3'>
               <h4 class="h4 theme-blue-color fw-bold">Opening Hours</h4>
               <p className=' text-[#8d8d8d]' ><b>Monday - Friday</b><br />
                 6:00 AM - 10:00 PM</p>
@@ -102,7 +102,7 @@ const Contact = () => {
                 <b>North</b><br />
                 Tamra North Road</p>
             </div>
-            <div className='col-3' id='socialDiv'>
+            <div className='col-4 col-md-2 col-lg-2 col-xl-3' id='socialDiv'>
               <h4 class="h4 theme-blue-color fw-bold">Social</h4>
               <a href="https://www.facebook.com/dentistryperfectsmile/" target="__blank" >
                 <FaFacebook size={40} className='mt-4' color='#4267B2' />

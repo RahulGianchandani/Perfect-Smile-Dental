@@ -28,17 +28,18 @@ const Home = () => {
   return (
     <div id='homePage'>
       <header className='d-flex max-sm:flex-col-reverse'>
-        <div id='leftSideHeader' className='col-7 p-4 max-sm:w-auto'>
+        <div id='leftSideHeader' className='max-sm:h-auto col-7 p-4 max-sm:w-auto max-sm:text-center max-sm:justify-items-center'>
           <h6 className='mb-5' >WELCOME TO OUR CLINIC</h6>
           <h1 className='mb-0 text-white'>Make your</h1>
           <h1 className='text-white mb-5'>smile Shine</h1>
-          <p className='text-white fw-bold'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
+          <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
           <button>MAKE AN APPOINTMENT</button>
         </div>
         <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
         </div>
       </header>
+
 
       <section id='serviceSec'>
         <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>Our Services</h1>
@@ -146,19 +147,23 @@ const Home = () => {
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div className="carousel-inner">
-              <div className="carousel-item h-auto active d-flex gap-28 max-sm:gap-4" data-bs-interval="10000">
-                <div className='col-sm-7 text-end max-sm:p-4'>
-                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+              <div className="carousel-item h-auto active d-flex gap-28 max-sm:gap-4 max-lg:gap-6" data-bs-interval="10000">
+                <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                       <div className='d-flex justify-center d-block d-sm-none'>
+                    <img src={testi1} className='rounded-full h-[100px] w-[100px]'>
+                    </img>
+                  </div>
                   <div>
-                    <img src={quotes} className='mb-4 inline'></img>
+                    <img src={quotes} className='mb-4 max-sm:mt-5 inline'></img>
                   </div>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Rona President.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -173,19 +178,23 @@ const Home = () => {
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4" data-bs-interval="2000">
-                <div className='col-sm-7 text-end max-sm:p-4'>
-                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6" data-bs-interval="2000">
+                <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                       <div className='d-flex justify-center d-block d-sm-none'>
+                    <img src={testi3} className='rounded-full h-[100px] w-[100px]'>
+                    </img>
+                  </div>
                   <div>
-                    <img src={quotes} className='mb-4 inline'></img>
+                    <img src={quotes} className='mb-4 max-sm:mt-5 inline'></img>
                   </div>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Ricky Malka.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -200,19 +209,23 @@ const Home = () => {
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
-                <div className='col-sm-7 text-end max-sm:p-4'>
-                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
+                <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                       <div className='d-flex justify-center d-block d-sm-none'>
+                    <img src={testi2} className='rounded-full h-[100px] w-[100px]'>
+                    </img>
+                  </div>
                   <div>
-                    <img src={quotes} className='mb-4 inline'></img>
+                    <img src={quotes} className='mb-4 max-sm:mt-5 inline'></img>
                   </div>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>It is highly recommended. Professional staff, nice people and wholehearted service</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>It is highly recommended. Professional staff, nice people and wholehearted service</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Fathalla Mreh.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -227,19 +240,23 @@ const Home = () => {
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
-                <div className='col-sm-7 text-end max-sm:p-4'>
-                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
+                <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                       <div className='d-flex justify-center d-block d-sm-none'>
+                    <img src={testi4} className='rounded-full h-[100px] w-[100px]'>
+                    </img>
+                  </div>
                   <div>
-                    <img src={quotes} className='mb-4 inline'></img>
+                    <img src={quotes} className='mb-4 max-sm:mt-5 inline'></img>
                   </div>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Ilan Zahov.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -254,19 +271,24 @@ const Home = () => {
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
-                <div className='col-sm-7 text-end max-sm:p-4'>
-                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
+                <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                   
+                  <div className='d-flex justify-center d-block d-sm-none'>
+                    <img src={testi6} className='rounded-full h-[100px] w-[100px]'>
+                    </img>
+                  </div>
                   <div>
-                    <img src={quotes} className='mb-4 inline'></img>
+                    <img src={quotes} className='mb-4 max-sm:mt-5 inline'></img>
                   </div>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Igal Todover.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -282,19 +304,23 @@ const Home = () => {
                 </div>
 
               </div>
-              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4">
-                <div className='col-sm-7 text-end max-sm:p-4'>
-                  <h1 className=' h1 mr-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
+              <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
+                <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
                   <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                       <div className='d-flex justify-center d-block d-sm-none'>
+                    <img src={testi5} className='rounded-full h-[100px] w-[100px]'>
+                    </img>
+                  </div>
                   <div>
-                    <img src={quotes} className='mb-4 inline'></img>
+                    <img src={quotes} className='mb-4 max-sm:mt-5 inline'></img>
                   </div>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max'>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
 
                   <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Barodi Rap.</h6>
 

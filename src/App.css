@@ -600,15 +600,15 @@ textarea {
 
 }
 
-#appointFormSec .StepButton-d2-0-2-8.active,
-#appointFormSec .StepButton-d6-0-2-18.active,
-#appointFormSec .StepButton-d10-0-2-32.active {
+#appointFormSec .step1.active,
+#appointFormSec .step2.active,
+#appointFormSec .step3.active {
   background-color: #3385d7;
 }
 
-#appointFormSec .StepButton-d2-0-2-8.completed,
-#appointFormSec .StepButton-d6-0-2-18.completed,
-#appointFormSec .StepButton-d10-0-2-32.completed {
+#appointFormSec .step1.completed,
+#appointFormSec .step2.completed,
+#appointFormSec .step3.completed {
   background-color: #1f2e88;
 }
 
