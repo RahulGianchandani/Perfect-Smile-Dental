@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Perfect-Smile-Dental/static/css/main.c492cc50.css",
-    "main.js": "/Perfect-Smile-Dental/static/js/main.3a7a2d12.js",
+    "main.css": "/Perfect-Smile-Dental/static/css/main.811bfff9.css",
+    "main.js": "/Perfect-Smile-Dental/static/js/main.c94d629f.js",
     "static/js/787.441ceeda.chunk.js": "/Perfect-Smile-Dental/static/js/787.441ceeda.chunk.js",
     "static/media/test3.jpg": "/Perfect-Smile-Dental/static/media/test3.ad9867d13f9fcb061288.jpg",
     "static/media/test5.jpg": "/Perfect-Smile-Dental/static/media/test5.cc49e794d0292be0137b.jpg",
@@ -25,6 +25,7 @@
     "static/media/dentist4-contact-pic1.webp": "/Perfect-Smile-Dental/static/media/dentist4-contact-pic1.ab90b35cd28bfacc71d7.webp",
     "static/media/dentist4-services-pic5.webp": "/Perfect-Smile-Dental/static/media/dentist4-services-pic5.133b1f4007ec7e724523.webp",
     "static/media/holycity_invisalign.jpg": "/Perfect-Smile-Dental/static/media/holycity_invisalign.f5129c5f33ae66531177.jpg",
+    "static/media/a-dental-patient-being-prepped-for-a-full-arch-implant-1.webp": "/Perfect-Smile-Dental/static/media/a-dental-patient-being-prepped-for-a-full-arch-implant-1.51fc2552aef6e5700883.webp",
     "static/media/dentist4-slider-bg.webp": "/Perfect-Smile-Dental/static/media/dentist4-slider-bg.709698698a477d54b6be.webp",
     "static/media/dentist4-footer-bg.webp": "/Perfect-Smile-Dental/static/media/dentist4-footer-bg.e3d778815fd05db9a991.webp",
     "static/media/dentist4-section-bg8.webp": "/Perfect-Smile-Dental/static/media/dentist4-section-bg8.4dcb6469bb7d0e9bd8c4.webp",
@@ -32,12 +33,12 @@
     "static/media/phone.webp": "/Perfect-Smile-Dental/static/media/phone.43fd14dd8fe68358d9d1.webp",
     "index.html": "/Perfect-Smile-Dental/index.html",
     "static/media/email.webp": "/Perfect-Smile-Dental/static/media/email.35be78a1f06d4cf2b821.webp",
-    "main.c492cc50.css.map": "/Perfect-Smile-Dental/static/css/main.c492cc50.css.map",
-    "main.3a7a2d12.js.map": "/Perfect-Smile-Dental/static/js/main.3a7a2d12.js.map",
+    "main.811bfff9.css.map": "/Perfect-Smile-Dental/static/css/main.811bfff9.css.map",
+    "main.c94d629f.js.map": "/Perfect-Smile-Dental/static/js/main.c94d629f.js.map",
     "787.441ceeda.chunk.js.map": "/Perfect-Smile-Dental/static/js/787.441ceeda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c492cc50.css",
-    "static/js/main.3a7a2d12.js"
+    "static/css/main.811bfff9.css",
+    "static/js/main.c94d629f.js"
   ]
 }
