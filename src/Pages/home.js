@@ -23,6 +23,7 @@ import trans6A from '../images/transformations/bf6after.png'
 
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from 'react-icons/tfi'
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -45,6 +46,7 @@ const Home = () => {
         <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>Our Services</h1>
         <div className='container pb-36'>
           <div id='treatments' className='grid grid-cols-3 gap-2 max-sm:grid-cols-1'>
+              <Link to="/service-mouth-dental">
             <div className='service   service1  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 mt-3 mb-6'>Mouth dental implant</h6>
@@ -59,21 +61,27 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='service   service2  duration-300'>
-              <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>BASAL GRAFT</h6>
-                <div className='text-white text-center textDiv '>
-                  <h6 className='h4 mb-4'>Treatment description</h6>
-                  <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    1. Implantation with final restoration within two days.
-                    2. Solutions for difficult cases due to complicated problems actually the possibility of restoration of zirconia crowns on top of the implants.
-                  </p>
-                  <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                    READ MORE
-                  </button>
+              </Link>
+        
+            <Link to="/service-basal-graft">
+              <div className='service   service2  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>BASAL GRAFT</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      1. Implantation with final restoration within two days.
+                      2. Solutions for difficult cases due to complicated problems actually the possibility of restoration of zirconia crowns on top of the implants.
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      READ MORE
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
+                </Link>
+      
+          <Link to="/service-zirconia-crowns">
             <div className='service   service3  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>Zirconia crowns</h6>
@@ -88,6 +96,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            </Link>
+                <Link to="/service-ct-scan">
             <div className='service   service4  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>CT scan</h6>
@@ -102,6 +112,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            </Link>
+                <Link to="/service-transparent-orthodontics">
             <div className='service   service5  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 mt-3 mb-6'>Transparent orthodontics</h6>
@@ -116,6 +128,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            </Link>
+                <Link to="/service-panorama-photography">
             <div className='service   service6  duration-300'>
               <div className='relative mainTextDiv'>
                 <h6 className='text-white text-center h2 mt-3 mb-6'>Panorama photography</h6>
@@ -130,6 +144,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </div>
       </section>

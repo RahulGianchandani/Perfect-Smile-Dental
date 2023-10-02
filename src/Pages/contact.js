@@ -33,7 +33,7 @@ const Contact = () => {
     <div id='contactPage'>
       <header >
         <div className='container max-w-[1350px]'>
-          <div className='d-flex max-md:block'>
+          <div className='d-flex max-md:!block'>
             <div className='leftSideImg col-md-7'>
               <div id='imgBox'>
                 <img src={contactImg} />
