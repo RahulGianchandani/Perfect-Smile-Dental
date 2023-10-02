@@ -23,6 +23,7 @@ import trans6A from '../images/transformations/bf6after.png'
 import serviceGirl from '../images/dentist4-services-pic5.webp'
 
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
+import { Link } from 'react-router-dom'
 
 const Transformations = () => {
   return (
@@ -96,7 +97,7 @@ const Transformations = () => {
                                 <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
                       <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
                       <h2 className='text-3xl md:text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
-                      <button>MAKE AN APPOINTMENT</button>
+                      <Link to="/appointment"><button>MAKE AN APPOINTMENT</button></Link>
                                 </div>
                 </div>
                 </div>
