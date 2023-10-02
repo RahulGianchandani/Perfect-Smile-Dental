@@ -189,7 +189,7 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi1} className="d-block w-100 h-[700px] max-xl:h-[800px] object-cover" alt="..." />
+                  <img src={testi1} className="d-block w-100 h-[712px] max-xl:h-[800px] object-cover" alt="..." />
                 </div>
 
               </div>
@@ -220,7 +220,7 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi3} className="d-block w-100 h-[700px] max-xl:h-[800px] object-cover" alt="..." />
+                  <img src={testi3} className="d-block w-100 h-[712px] max-xl:h-[800px] object-cover" alt="..." />
                 </div>
 
               </div>
@@ -251,7 +251,7 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi2} className="d-block w-100 h-[700px] max-xl:h-[800px] object-cover" alt="..." />
+                  <img src={testi2} className="d-block w-100 h-[712px] max-xl:h-[800px] object-cover" alt="..." />
                 </div>
 
               </div>
@@ -282,7 +282,7 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi4} className="d-block w-100 h-[700px] max-xl:h-[800px] object-cover" alt="..." />
+                  <img src={testi4} className="d-block w-100 h-[712px] max-xl:h-[800px] object-cover" alt="..." />
                 </div>
 
               </div>
@@ -315,7 +315,7 @@ const Home = () => {
 
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi6} className="d-block w-100 h-[700px] max-xl:h-[800px] object-cover" alt="..." />
+                  <img src={testi6} className="d-block w-100 h-[712px] max-xl:h-[800px] object-cover" alt="..." />
                 </div>
 
               </div>
@@ -347,7 +347,7 @@ const Home = () => {
                   </button>
                 </div>
                 <div className='col-5 testiImg '>
-                  <img src={testi5} className="d-block w-100 h-[700px] max-xl:h-[800px] object-cover" alt="..." />
+                  <img src={testi5} className="d-block w-100 h-[712px] max-xl:h-[800px] object-cover" alt="..." />
                 </div>
 
               </div>
