@@ -1,6 +1,7 @@
 import React from 'react'
 import serviceGirl from '../../images/dentist4-services-pic5.webp'
 import serviceImg from '../../images/services/a-dental-patient-being-prepped-for-a-full-arch-implant-1.webp'
+import { Link } from 'react-router-dom'
 const CTScan = () => {
     return (
         <div id='homePage'>
@@ -45,7 +46,7 @@ const CTScan = () => {
                             <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
                                 <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
                                 <h2 className='text-3xl md:text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
-                                <button>MAKE AN APPOINTMENT</button>
+                                <Link to="/appointment"><button>MAKE AN APPOINTMENT</button></Link>
                             </div>
                         </div>
                     </div>

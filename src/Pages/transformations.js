@@ -1,12 +1,5 @@
 import React from 'react'
-import testi3 from '../images/test3.jpg'
-import testi2 from '../images/test2.jpg'
-import testi4 from '../images/test4.jpg'
-import testi5 from '../images/test5.jpg'
-import testi6 from '../images/test6.jpg'
-import testi1 from '../images/rona-after.jpeg'
-import quotes from '../images/icons8-quote-100.png'
-import star from '../images/icons8-star-30.png'
+
 import trans1B from '../images/transformations/bf1before.png'
 import trans1A from '../images/transformations/bf1after.png'
 import trans2B from '../images/transformations/bf2before.png'
@@ -23,6 +16,7 @@ import trans6A from '../images/transformations/bf6after.png'
 import serviceGirl from '../images/dentist4-services-pic5.webp'
 
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
+import { Link } from 'react-router-dom'
 
 const Transformations = () => {
   return (
@@ -96,7 +90,7 @@ const Transformations = () => {
               <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
                 <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
                 <h2 className='text-3xl md:text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
-                <button>MAKE AN APPOINTMENT</button>
+                <Link to="/appointment"><button>MAKE AN APPOINTMENT</button></Link>
               </div>
             </div>
           </div>
