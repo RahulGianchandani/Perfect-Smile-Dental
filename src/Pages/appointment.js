@@ -77,11 +77,11 @@ const Appointment = () => {
       </header>
 
       <section id="appointFormSec">
-        <h1 className="text-center h1 theme-blue-color  mb-24 pt-32">
+        <h1 className="text-center h1 theme-blue-color  mb-24 pt-32 max-md:pt-14 max-md:mb-10">
           Make An Appointment
         </h1>
-        <div className="container pb-36">
-          <Stepper activeStep={currentPage} className="mb-14">
+        <div className="container pb-36 max-md:pb-12">
+          <Stepper activeStep={currentPage} className="mb-14 max-md:mb-6">
             <Step label="Services" className="step1" />
             <Step label="Date & Location" className="step2" />
             <Step label="Details" className="step3" />
@@ -89,7 +89,7 @@ const Appointment = () => {
 
           {currentPage === 0 && (
             <>
-              <h3 className="mb-14 h3 theme-dark-blue fw-bold text-center ">
+              <h3 className="mb-14 h3 max-md:mb-8 theme-dark-blue fw-bold text-center ">
                 Choose Service
               </h3>
               <section id="serviceSec">
@@ -202,13 +202,13 @@ const Appointment = () => {
 
           {currentPage === 1 && (
             <>
-              <h3 className="mb-14 h3 theme-dark-blue fw-bold text-center ">
+              <h3 className="mb-14 h3 max-md:mb-8 theme-dark-blue fw-bold text-center ">
                 Choose Date and Time
               </h3>
               <section id="DtLocSec">
                 <div className="container max-w-[1350px]">
                   <div className="row justify-center">
-                    <div className="col-2 dateDiv">
+                    <div className="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-5 col-8 dateDiv">
                       <Datetime
                         onChange={(value) => setDate(value)}
                         initialValue={date}
@@ -224,7 +224,7 @@ const Appointment = () => {
                             setClinicName("North, Tamra North Road");
                             setMapSelect(1);
                           }}
-                          className="col-6 mapsDiv relative"
+                          className="col mapsDiv relative"
                         >
                           <iframe
                             className={`maps  duration-300 ${
@@ -245,7 +245,7 @@ const Appointment = () => {
                             );
                             setMapSelect(2);
                           }}
-                          className="col-6 mapsDiv relative"
+                          className="col mapsDiv relative"
                         >
                           <iframe
                             className={`maps duration-300 ${
@@ -269,7 +269,7 @@ const Appointment = () => {
 
           {currentPage === 2 && (
             <>
-              <h3 className="mb-14 h3 theme-dark-blue fw-bold text-center ">
+              <h3 className="mb-14 max-md:mb-8 h3 theme-dark-blue fw-bold text-center ">
                 Fill the form
               </h3>
 
@@ -302,7 +302,7 @@ const Appointment = () => {
                       </div>
 
                       <section id="formSec" className=" bg-[#ffffff12] mt-4">
-                        <div className="container pt-16 pb-10">
+                        <div className="container pt-16 pb-10 max-md:pb-2">
                           <div className="d-flex justify-center gap-16">
                             <form className=" bg-slate-400  ">
                               {/* <label for="fname">First Name</label> */}
@@ -350,7 +350,7 @@ const Appointment = () => {
             </>
           )}
 
-          <div id="Btns" className="text-end">
+          <div id="Btns" className="text-end max-md:!text-center">
             <button
               id="nxtBtn"
               className="disabled:cursor-not-allowed disabled:opacity-60"

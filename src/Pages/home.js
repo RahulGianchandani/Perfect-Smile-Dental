@@ -44,7 +44,7 @@ const Home = () => {
 
       <section id='serviceSec'>
         <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>Our Services</h1>
-        <div className='container pb-36'>
+        <div className='container pb-36 max-md:pb-12'>
           <div id='treatments' className='grid grid-cols-3 gap-2 max-sm:grid-cols-1'>
               <Link to="/service-mouth-dental">
             <div className='service   service1  duration-300'>
@@ -164,8 +164,8 @@ const Home = () => {
             <div className="carousel-inner">
               <div className="carousel-item h-auto active d-flex gap-28 max-sm:gap-4 max-lg:gap-6" data-bs-interval="10000">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
-                  <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-6'>Testimonials</h1>
+                  <h2 className='h2 mb-16 max-md:mb-10 theme-dark-blue'>Take it from our patients</h2>
                        <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi1} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -178,9 +178,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[216px]'>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
 
-                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Rona President.</h6>
+                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Rona President.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -195,8 +195,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6" data-bs-interval="2000">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
-                  <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-6'>Testimonials</h1>
+                  <h2 className='h2 mb-16 max-md:mb-10 theme-dark-blue'>Take it from our patients</h2>
                        <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi3} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -209,9 +209,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[216px]'>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
 
-                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Ricky Malka.</h6>
+                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Ricky Malka.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -226,8 +226,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
-                  <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-6'>Testimonials</h1>
+                  <h2 className='h2 mb-16 max-md:mb-10 theme-dark-blue'>Take it from our patients</h2>
                        <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi2} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -240,9 +240,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>It is highly recommended. Professional staff, nice people and wholehearted service</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[216px]'>It is highly recommended. Professional staff, nice people and wholehearted service</p>
 
-                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Fathalla Mreh.</h6>
+                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Fathalla Mreh.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -257,8 +257,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
-                  <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-6'>Testimonials</h1>
+                  <h2 className='h2 mb-16 max-md:mb-10 theme-dark-blue'>Take it from our patients</h2>
                        <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi4} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -271,9 +271,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[216px]'>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
 
-                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Ilan Zahov.</h6>
+                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Ilan Zahov.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -288,8 +288,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
-                  <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-6'>Testimonials</h1>
+                  <h2 className='h2 mb-16 max-md:mb-10 theme-dark-blue'>Take it from our patients</h2>
                    
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi6} className='rounded-full h-[100px] w-[100px]'>
@@ -303,9 +303,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[216px]'>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
 
-                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Igal Todover.</h6>
+                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Igal Todover.</h6>
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -321,8 +321,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14'>Testimonials</h1>
-                  <h2 className='h2 mb-16 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-8 max-md:mb-6'>Testimonials</h1>
+                  <h2 className='h2 mb-16 max-md:mb-10 theme-dark-blue'>Take it from our patients</h2>
                        <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi5} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -335,9 +335,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max'>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[216px]'>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
 
-                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue'>— Barodi Rap.</h6>
+                  <h6 className='h5 mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Barodi Rap.</h6>
 
                   <button type="button" className='mr-7 align-middle pb-14' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
@@ -367,9 +367,9 @@ const Home = () => {
       </section>
 
       <section id="expSec" className=''>
-        <h1 className='text-center h1 text-white pt-32'>Patient Experiences</h1>
-        <h1 className='text-center h2 theme-blue-color mb-24 mt-4 '>See what patients have to say about their experience</h1>
-        <div className='container pb-36'>
+        <h1 className='text-center h1 text-white pt-32 max-md:pt-12'>Patient Experiences</h1>
+        <h1 className='text-center h2 theme-blue-color mb-24 max-md:mb-12 mt-4 '>See what patients have to say about their experience</h1>
+        <div className='container pb-36 max-md:pb-12'>
 
           <div className='row justify-center gap-y-10 '>
             <video width="781" height="440" controls className='col-sm-6' >
@@ -386,8 +386,8 @@ const Home = () => {
       </section>
 
       <section id="transformSec" className=''>
-        <h1 className='text-center h1 theme-blue-color  mb-24 pt-32'>Patient Transformations</h1>
-        <div className='container pb-36'>
+        <h1 className='text-center h1 theme-blue-color  mb-24 max-md:mb-12 pt-32 max-md:pt-12'>Patient Transformations</h1>
+        <div className='container pb-36 max-md:pb-12'>
           {/* <span>Before</span>
           <span>After</span> */}
           <div className='grid grid-cols-2 gap-y-20 justify-items-center max-xl:grid-cols-1 max-xl:gap-y-10'>

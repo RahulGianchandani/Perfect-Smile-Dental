@@ -27,7 +27,7 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 const Transformations = () => {
   return (
     <div id='homePage'>
-   <header className='d-flex max-sm:flex-col-reverse'>
+      <header className='d-flex max-sm:flex-col-reverse'>
         <div id='leftSideHeader' className='max-sm:h-auto col-7 p-4 max-sm:w-auto max-sm:text-center max-sm:justify-items-center'>
           <h6 className='mb-5' >WELCOME TO OUR CLINIC</h6>
           <h1 className='mb-0 text-white'>Make your</h1>
@@ -42,11 +42,11 @@ const Transformations = () => {
 
 
 
-     
+
 
       <section id="transformSec" className='bg-[#fff5f5]'>
-        <h1 className='text-center h1 theme-blue-color  mb-24 pt-32'>Patient Transformations</h1>
-        <div className='container pb-36'>
+        <h1 className='text-center h1 theme-blue-color  mb-24 max-md:mb-12 pt-32 max-md:pt-12'>Patient Transformations</h1>
+        <div className='container pb-36 max-md:pb-12'>
           {/* <span>Before</span>
           <span>After</span> */}
           <div className='grid grid-cols-2 gap-y-20 justify-items-center max-xl:grid-cols-1 max-xl:gap-y-10'>
@@ -86,22 +86,22 @@ const Transformations = () => {
       </section>
 
       <section id="appointSec" className=''>
-            <div className='container py-32 max-w-[1200px]'>
-             
-                <div className='bg-[#3043b8] appointDiv '>
-                <div className='d-sm-flex gap-9'>
-                  <div id='imgDiv' className=' h-96 col-sm-6'>
-                  <img src={serviceGirl} className='w-100 h-100' />
-                                </div>
-                                <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
-                      <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
-                      <h2 className='text-3xl md:text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
-                      <button>MAKE AN APPOINTMENT</button>
-                                </div>
-                </div>
-                </div>
+        <div className='container py-32 max-md:py-12 max-w-[1200px]'>
+
+          <div className='bg-[#3043b8] appointDiv '>
+            <div className='d-sm-flex gap-9'>
+              <div id='imgDiv' className=' h-96 col-sm-6'>
+                <img src={serviceGirl} className='w-100 h-100' />
+              </div>
+              <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
+                <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
+                <h2 className='text-3xl md:text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
+                <button>MAKE AN APPOINTMENT</button>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
     </div>
   )

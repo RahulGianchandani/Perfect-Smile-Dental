@@ -6,7 +6,7 @@ import { ImWhatsapp } from 'react-icons/im'
 const Footer = () => {
     return (
         <footer id='footer'>
-            <div id='footer-top'>
+            <div id='footer-top' className='max-md:!py-12'>
                 <div className='container'>
                     <div className='d-flex justify-content-between align-items-center align-content-center text-center px-72 max-xl:px-12 max-sm:flex-col'>
                         <section className='p-2'>
