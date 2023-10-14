@@ -27,7 +27,7 @@ const Transformations = () => {
           <h1 className='mb-0 text-white'>Make your</h1>
           <h1 className='text-white mb-5'>smile Shine</h1>
           <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-          <button>MAKE AN APPOINTMENT</button>
+          <Link to="/appointment"><button>MAKE AN APPOINTMENT</button></Link>
         </div>
         <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
