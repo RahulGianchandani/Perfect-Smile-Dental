@@ -45,28 +45,28 @@ const Home = () => {
       <section id='serviceSec'>
         <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>Our Services</h1>
         <div className='container pb-36 max-md:pb-12'>
-          <div id='treatments' className='grid grid-cols-3 gap-2 max-sm:grid-cols-1'>
-              <Link to="/service-mouth-dental">
-            <div className='service   service1  duration-300'>
-              <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 mt-3 mb-6'>Mouth dental implant</h6>
-                <div className='text-white text-center textDiv '>
-                  <h6 className='h4 mb-4'>Treatment description</h6>
-                  <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    A jaw without teeth or with destroyed teeth can be restored today with the help of special implants. On the day of treatment, the implants are inserted and restored with a temporary bridge.
-                  </p>
-                  <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                    READ MORE
-                  </button>
+          <div id='treatments' className='grid grid-cols-3 gap-5 max-sm:grid-cols-1'>
+            <Link to="/service-mouth-dental">
+              <div className='service   service1  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-black text-center h2 mt-3 mb-6'>Mouth dental implant</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      A jaw without teeth or with destroyed teeth can be restored today with the help of special implants. On the day of treatment, the implants are inserted and restored with a temporary bridge.
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      READ MORE
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-              </Link>
-        
+            </Link>
+
             <Link to="/service-basal-graft">
               <div className='service   service2  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>BASAL GRAFT</h6>
+                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>BASAL GRAFT</h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>Treatment description</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -79,71 +79,71 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-                </Link>
-      
-          <Link to="/service-zirconia-crowns">
-            <div className='service   service3  duration-300'>
-              <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>Zirconia crowns</h6>
-                <div className='text-white text-center textDiv '>
-                  <h6 className='h4 mb-4'>Treatment description</h6>
-                  <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    Wearing full zirconia crowns with diamond coating in a computerized design in the shape of the complete and beautiful tooth on the damaged tooth.
-                  </p>
-                  <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-            </div>
             </Link>
-                <Link to="/service-ct-scan">
-            <div className='service   service4  duration-300'>
-              <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>CT scan</h6>
-                <div className='text-white text-center textDiv '>
-                  <h6 className='h4 mb-4'>Treatment description</h6>
-                  <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    CT scan, very accurate measurements with the help of an intraoral scanner, saving time, and a process that is much more comfortable and clean for the patient.
-                  </p>
-                  <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                    READ MORE
-                  </button>
+
+            <Link to="/service-zirconia-crowns">
+              <div className='service   service3  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>Zirconia crowns</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      Wearing full zirconia crowns with diamond coating in a computerized design in the shape of the complete and beautiful tooth on the damaged tooth.
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      READ MORE
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
             </Link>
-                <Link to="/service-transparent-orthodontics">
-            <div className='service   service5  duration-300'>
-              <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 mt-3 mb-6'>Transparent orthodontics</h6>
-                <div className='text-white text-center textDiv '>
-                  <h6 className='h4 mb-4'>Treatment description</h6>
-                  <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    An innovative method of straightening teeth with invisible transparent braces that allows the patient to undergo aesthetic teeth straightening.
-                  </p>
-                  <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                    READ MORE
-                  </button>
+            <Link to="/service-ct-scan">
+              <div className='service   service4  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>CT scan</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      CT scan, very accurate measurements with the help of an intraoral scanner, saving time, and a process that is much more comfortable and clean for the patient.
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      READ MORE
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
             </Link>
-                <Link to="/service-panorama-photography">
-            <div className='service   service6  duration-300'>
-              <div className='relative mainTextDiv'>
-                <h6 className='text-white text-center h2 mt-3 mb-6'>Panorama photography</h6>
-                <div className='text-white text-center textDiv '>
-                  <h6 className='h4 mb-4'>Treatment description</h6>
-                  <p className='text-center h-36 px-14 mt-2 text-lg'>
-                    Panoramic photography is an umbrella term for various techniques that can be used to create images with a very wide viewing angle.
-                  </p>
-                  <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                    READ MORE
-                  </button>
+            <Link to="/service-transparent-orthodontics">
+              <div className='service   service5  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-black text-center h2 mt-3 mb-6'>Transparent orthodontics</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      An innovative method of straightening teeth with invisible transparent braces that allows the patient to undergo aesthetic teeth straightening.
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      READ MORE
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
+            <Link to="/service-panorama-photography">
+              <div className='service   service6  duration-300'>
+                <div className='relative mainTextDiv'>
+                  <h6 className='text-black text-center h2 mt-3 mb-6'>Panorama photography</h6>
+                  <div className='text-white text-center textDiv '>
+                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <p className='text-center h-36 px-14 mt-2 text-lg'>
+                      Panoramic photography is an umbrella term for various techniques that can be used to create images with a very wide viewing angle.
+                    </p>
+                    <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
+                      READ MORE
+                    </button>
+                  </div>
+                </div>
+              </div>
             </Link>
           </div>
         </div>
@@ -166,7 +166,7 @@ const Home = () => {
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
                   <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
                   <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
-                       <div className='d-flex justify-center d-block d-sm-none'>
+                  <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi1} className='rounded-full h-[100px] w-[100px]'>
                     </img>
                   </div>
@@ -197,7 +197,7 @@ const Home = () => {
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
                   <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
                   <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
-                       <div className='d-flex justify-center d-block d-sm-none'>
+                  <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi3} className='rounded-full h-[100px] w-[100px]'>
                     </img>
                   </div>
@@ -228,7 +228,7 @@ const Home = () => {
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
                   <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
                   <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
-                       <div className='d-flex justify-center d-block d-sm-none'>
+                  <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi2} className='rounded-full h-[100px] w-[100px]'>
                     </img>
                   </div>
@@ -259,7 +259,7 @@ const Home = () => {
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
                   <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
                   <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
-                       <div className='d-flex justify-center d-block d-sm-none'>
+                  <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi4} className='rounded-full h-[100px] w-[100px]'>
                     </img>
                   </div>
@@ -290,7 +290,7 @@ const Home = () => {
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
                   <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
                   <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
-                   
+
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi6} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -323,7 +323,7 @@ const Home = () => {
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
                   <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-8 max-md:mb-6'>Testimonials</h1>
                   <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
-                       <div className='d-flex justify-center d-block d-sm-none'>
+                  <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi5} className='rounded-full h-[100px] w-[100px]'>
                     </img>
                   </div>
@@ -372,15 +372,11 @@ const Home = () => {
         <div className='container pb-36 max-md:pb-12'>
 
           <div className='row justify-center gap-y-10 '>
-            <video width="781" height="440" controls className='col-sm-6' >
-                  <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
-                 </video>
-            <video width="781" height="440" controls className='col-sm-6' >
-                  <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
-                 </video>
-            <video width="781" height="440" controls className='col-sm-6' >
-                  <source src={"https://youtu.be/gMycqoQrlBs?si=8icxkmxACO1QP5Ui"} type="video/mp4"/>
-                 </video>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=469&href=https%3A%2F%2Fwww.facebook.com%2Fdentistryperfectsmile%2Fvideos%2F590234879085678%2F&show_text=false&width=560&t=0" width="560" height="469" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" className='col-sm-6' allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+            <iframe src="https://www.facebook.com/plugins/video.php?height=469&href=https%3A%2F%2Fwww.facebook.com%2Fdentistryperfectsmile%2Fvideos%2F3144463749138938%2F&show_text=false&width=560&t=0" width="560" height="469" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" className='col-sm-6' allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+
           </div>
         </div>
       </section>

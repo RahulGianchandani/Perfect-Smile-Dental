@@ -223,31 +223,31 @@ footer .whatsappICON {
   width: 100%;
   position: absolute;
   z-index: -1;
-  /* filter: blur(0px) brightness(0.4); */
+  filter: blur(0.4px) brightness(0.8);
 }
 
 #homePage #serviceSec .service1::before {
-  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+  background: url(./images/services/implant.jpg) no-repeat center center/cover;
 }
 
 #homePage #serviceSec .service2::before {
-  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+  background: url(./images/services/implant2.jpg ) no-repeat center center/cover;
 }
 
 #homePage #serviceSec .service3::before {
-  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+  background: url(./images/services/zirkon.jpg) no-repeat center center/cover;
 }
 
 #homePage #serviceSec .service4::before {
-  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+  background: url(./images/services/ct.jpg) no-repeat center center/cover;
 }
 
 #homePage #serviceSec .service5::before {
-  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+  background: url(./images/services/5photo.jpg) no-repeat center center/cover;
 }
 
 #homePage #serviceSec .service6::before {
-  background: url(./images/holycity_invisalign.jpg) no-repeat center center/cover;
+  background: url(./images/services/panorami.jpg) no-repeat center center/cover;
 }
 
 #homePage #serviceSec .service:hover .mainTextDiv:before {
