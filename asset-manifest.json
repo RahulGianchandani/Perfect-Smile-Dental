@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/Perfect-Smile-Dental/static/css/main.381a25c3.css",
-    "main.js": "/Perfect-Smile-Dental/static/js/main.261ea3e9.js",
+    "main.css": "/Perfect-Smile-Dental/static/css/main.b3677dd1.css",
+    "main.js": "/Perfect-Smile-Dental/static/js/main.70dfcb1d.js",
     "static/js/787.441ceeda.chunk.js": "/Perfect-Smile-Dental/static/js/787.441ceeda.chunk.js",
     "static/media/test3.jpg": "/Perfect-Smile-Dental/static/media/test3.ad9867d13f9fcb061288.jpg",
     "static/media/test5.jpg": "/Perfect-Smile-Dental/static/media/test5.cc49e794d0292be0137b.jpg",
     "static/media/rona-after.jpeg": "/Perfect-Smile-Dental/static/media/rona-after.10a8a5f2144595ddb544.jpeg",
     "static/media/test4.jpg": "/Perfect-Smile-Dental/static/media/test4.cca67a3c7d482aa94e10.jpg",
+    "static/media/5photo.jpg": "/Perfect-Smile-Dental/static/media/5photo.5ed40e15b9104150bf73.jpg",
     "static/media/dentist4-slider-pic1.webp": "/Perfect-Smile-Dental/static/media/dentist4-slider-pic1.df10a15076b69b682b03.webp",
     "static/media/test2.jpg": "/Perfect-Smile-Dental/static/media/test2.1f2540d2f1145be41a38.jpg",
+    "static/media/panorami.jpg": "/Perfect-Smile-Dental/static/media/panorami.60736fe923e1161972d5.jpg",
+    "static/media/ct.jpg": "/Perfect-Smile-Dental/static/media/ct.dd227bf3936e80ddfe2b.jpg",
+    "static/media/implant.jpg": "/Perfect-Smile-Dental/static/media/implant.8a480e789ed07da68e62.jpg",
+    "static/media/zirkon.jpg": "/Perfect-Smile-Dental/static/media/zirkon.ed21dd7583000adae4e3.jpg",
     "static/media/bf3before.png": "/Perfect-Smile-Dental/static/media/bf3before.eedbf8183000425b3acd.png",
     "static/media/bf2before.png": "/Perfect-Smile-Dental/static/media/bf2before.c44d725c219fae1697a1.png",
+    "static/media/implant2.jpg": "/Perfect-Smile-Dental/static/media/implant2.23da2fd725ff979758bd.jpg",
     "static/media/bf1before.png": "/Perfect-Smile-Dental/static/media/bf1before.da4fa2ef72949a60f38b.png",
     "static/media/bf3after.png": "/Perfect-Smile-Dental/static/media/bf3after.bebf09459db06f2cfdd9.png",
     "static/media/bf4after.png": "/Perfect-Smile-Dental/static/media/bf4after.63a69fc5e92af7594408.png",
@@ -24,7 +30,6 @@
     "static/media/bf5after.png": "/Perfect-Smile-Dental/static/media/bf5after.680f25592198b5833c04.png",
     "static/media/dentist4-contact-pic1.webp": "/Perfect-Smile-Dental/static/media/dentist4-contact-pic1.ab90b35cd28bfacc71d7.webp",
     "static/media/dentist4-services-pic5.webp": "/Perfect-Smile-Dental/static/media/dentist4-services-pic5.133b1f4007ec7e724523.webp",
-    "static/media/holycity_invisalign.jpg": "/Perfect-Smile-Dental/static/media/holycity_invisalign.f5129c5f33ae66531177.jpg",
     "static/media/a-dental-patient-being-prepped-for-a-full-arch-implant-1.webp": "/Perfect-Smile-Dental/static/media/a-dental-patient-being-prepped-for-a-full-arch-implant-1.51fc2552aef6e5700883.webp",
     "static/media/dentist4-slider-bg.webp": "/Perfect-Smile-Dental/static/media/dentist4-slider-bg.709698698a477d54b6be.webp",
     "static/media/dentist4-footer-bg.webp": "/Perfect-Smile-Dental/static/media/dentist4-footer-bg.e3d778815fd05db9a991.webp",
@@ -33,12 +38,12 @@
     "static/media/phone.webp": "/Perfect-Smile-Dental/static/media/phone.43fd14dd8fe68358d9d1.webp",
     "index.html": "/Perfect-Smile-Dental/index.html",
     "static/media/email.webp": "/Perfect-Smile-Dental/static/media/email.35be78a1f06d4cf2b821.webp",
-    "main.381a25c3.css.map": "/Perfect-Smile-Dental/static/css/main.381a25c3.css.map",
-    "main.261ea3e9.js.map": "/Perfect-Smile-Dental/static/js/main.261ea3e9.js.map",
+    "main.b3677dd1.css.map": "/Perfect-Smile-Dental/static/css/main.b3677dd1.css.map",
+    "main.70dfcb1d.js.map": "/Perfect-Smile-Dental/static/js/main.70dfcb1d.js.map",
     "787.441ceeda.chunk.js.map": "/Perfect-Smile-Dental/static/js/787.441ceeda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.381a25c3.css",
-    "static/js/main.261ea3e9.js"
+    "static/css/main.b3677dd1.css",
+    "static/js/main.70dfcb1d.js"
   ]
 }
