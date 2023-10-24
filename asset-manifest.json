@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Perfect-Smile-Dental/static/css/main.dcee48df.css",
+    "main.css": "/Perfect-Smile-Dental/static/css/main.382579d2.css",
     "main.js": "/Perfect-Smile-Dental/static/js/main.bae6db1f.js",
     "static/js/787.441ceeda.chunk.js": "/Perfect-Smile-Dental/static/js/787.441ceeda.chunk.js",
     "static/media/test3.jpg": "/Perfect-Smile-Dental/static/media/test3.ad9867d13f9fcb061288.jpg",
@@ -38,12 +38,12 @@
     "index.html": "/Perfect-Smile-Dental/index.html",
     "static/media/phone.webp": "/Perfect-Smile-Dental/static/media/phone.43fd14dd8fe68358d9d1.webp",
     "static/media/email.webp": "/Perfect-Smile-Dental/static/media/email.35be78a1f06d4cf2b821.webp",
-    "main.dcee48df.css.map": "/Perfect-Smile-Dental/static/css/main.dcee48df.css.map",
+    "main.382579d2.css.map": "/Perfect-Smile-Dental/static/css/main.382579d2.css.map",
     "main.bae6db1f.js.map": "/Perfect-Smile-Dental/static/js/main.bae6db1f.js.map",
     "787.441ceeda.chunk.js.map": "/Perfect-Smile-Dental/static/js/787.441ceeda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcee48df.css",
+    "static/css/main.382579d2.css",
     "static/js/main.bae6db1f.js"
   ]
 }
