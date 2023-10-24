@@ -44,8 +44,8 @@ const TransparentOrthodontics = () => {
                                 <img src={serviceGirl} className='w-100 h-100' />
                             </div>
                             <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
-                                <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
-                                <h2 className='text-3xl md:text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
+                                <h6 className='text-[#3385d7] fw-bold mb-3'>הזמינו ביקור</h6>
+                                <h2 className='text-3xl md:text-5xl text-white'>המומחים המובילים שלנו מחכים לעזור לך. צור איתנו קשר</h2>
                                 <Link to="/appointment"><button>לקבוע פגישה</button></Link>
                             </div>
                         </div>
