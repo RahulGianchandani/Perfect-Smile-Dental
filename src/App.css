@@ -20,6 +20,24 @@ body {
   color: #1f2e88;
 }
 
+.goog-te-combo {
+  width: 140px;
+  font-size: 12px;
+  padding: 0px 5px;
+  height: 30px;
+}
+
+#google_translate_element {
+  position: fixed;
+  top: 28px;
+  left: 473px;
+  z-index: 200;
+}
+
+#google_translate_element span {
+  display: none;
+}
+
 /************ HEADER  ************/
 .header {
   position: fixed;
@@ -448,8 +466,8 @@ button:hover::after {
 }
 
 
- #formSec input[type=text],
- #formSec input[type=email],
+#formSec input[type=text],
+#formSec input[type=email],
 select,
 textarea {
   width: 100%;
@@ -464,8 +482,8 @@ textarea {
 
 }
 
- #formSec input:focus, 
- #formSec textarea:focus {
+#formSec input:focus,
+#formSec textarea:focus {
   color: #3385d7;
   background-color: rgba(212, 228, 246, 1) !important;
   border-color: #d5e5ee;
@@ -475,7 +493,7 @@ textarea {
 
 }
 
- #formSec input[type=submit] {
+#formSec input[type=submit] {
   background-color: #3385d7;
   padding: 16px 42px;
   border-width: 0px;
@@ -489,11 +507,11 @@ textarea {
   cursor: pointer;
 }
 
- #formSec input[type=submit]:hover {
+#formSec input[type=submit]:hover {
   background-color: #5ea0e8;
 }
 
- #formSec form {
+#formSec form {
   padding: 80px 40px 0px;
   background-color: #ffffff;
   margin-top: -60px;
@@ -566,7 +584,8 @@ textarea {
   height: 200%;
 }
 
-#homePage #appointFormSec #serviceSec .service:hover, #homePage #appointFormSec #DtLocSec .maps:hover {
+#homePage #appointFormSec #serviceSec .service:hover,
+#homePage #appointFormSec #DtLocSec .maps:hover {
   filter: brightness(0.8);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   cursor: pointer;
@@ -580,23 +599,25 @@ textarea {
 
 }
 
-#homePage #appointFormSec #DtLocSec .mapsDiv:before{
+#homePage #appointFormSec #DtLocSec .mapsDiv:before {
   content: "";
   position: absolute;
   z-index: 10;
   height: 100%;
   width: 100%;
   /* background-color: #000000; */
-   cursor: pointer;
-   transition: 300ms;
+  cursor: pointer;
+  transition: 300ms;
 }
-#homePage #appointFormSec #DtLocSec .mapsDiv:hover:before{
-  background-color: rgba(0,0,0,0.5);
+
+#homePage #appointFormSec #DtLocSec .mapsDiv:hover:before {
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#homePage #appointFormSec #formSec form{
-  transform: translateY(0px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+#homePage #appointFormSec #formSec form {
+  transform: translateY(0px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
 }
 
@@ -616,7 +637,28 @@ textarea {
 
 /************ APPOINTMENT PAGE ENDS   ************/
 
+/* @media (width < 1400px) {
+  #google_translate_element {
+    top: 28px;
+    left: 26%;
+  }
 
+} */
+/* @media (width < 1200px) {
+  #google_translate_element {
+    top: 28px;
+    left: 26%;
+  }
+
+} */
+
+@media (width < 768px) {
+  #google_translate_element {
+    top: 14px;
+    left: 20%;
+  }
+
+}
 
 /* media query */
 @media (width < 565px) {

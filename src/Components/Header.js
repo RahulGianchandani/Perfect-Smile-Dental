@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
- 
+
 
 
 
@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <nav class={`navbar navbar-expand-lg header ${navBg && "sticky"} max-sm:py-0`}>
 
-         
+            
             <div class="container-fluid px-sm-5">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
