@@ -5,15 +5,9 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
-    const lngs = [
-        { code: "en", native: "English" },
-        { code: "vn", native: "Vietnamese" },
-    ];
+ 
 
-    const { t, i18n } = useTranslation();
-    const handleTrans = (code) => {
-        i18n.changeLanguage(code);
-    };
+
 
     const [navBg, setNavBg] = useState(false);
 
@@ -35,11 +29,7 @@ const Header = () => {
     return (
         <nav class={`navbar navbar-expand-lg header ${navBg && "sticky"} max-sm:py-0`}>
 
-            {lngs.map((lng, i) => {
-                const { code, native } = lng;
-                return <button onClick={() => handleTrans(code)}>{native}</button>;
-            })}
-
+         
             <div class="container-fluid px-sm-5">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
