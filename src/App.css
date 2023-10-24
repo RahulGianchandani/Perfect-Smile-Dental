@@ -27,6 +27,18 @@ body {
   height: 30px;
 }
 
+.goog-logo-link {
+  display:none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  color: blue !important;
+}
+
 #google_translate_element {
   position: fixed;
   top: 28px;
