@@ -27,7 +27,7 @@ body {
   height: 30px;
 }
 
-.goog-logo-link {
+/* .goog-logo-link {
   display:none !important;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .goog-te-gadget .goog-te-combo {
   color: blue !important;
-}
+} */
 
 #google_translate_element {
   position: fixed;
