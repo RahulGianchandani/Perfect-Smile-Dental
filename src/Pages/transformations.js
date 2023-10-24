@@ -23,11 +23,11 @@ const Transformations = () => {
     <div id='homePage'>
       <header className='d-flex max-sm:flex-col-reverse'>
         <div id='leftSideHeader' className='max-sm:h-auto col-7 p-4 max-sm:w-auto max-sm:text-center max-sm:justify-items-center'>
-          <h6 className='mb-5' >WELCOME TO OUR CLINIC</h6>
-          <h1 className='mb-0 text-white'>Make your</h1>
-          <h1 className='text-white mb-5'>smile Shine</h1>
+          <h6 className='mb-5' >ברוכים הבאים לקליניקה שלנו</h6>
+          <h1 className='mb-0 text-white'>הפוך את שלך</h1>
+          <h1 className='text-white mb-5'>חיוך לזרוח</h1>
           <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-          <Link to="/appointment"><button>MAKE AN APPOINTMENT</button></Link>
+          <Link to="/appointment"><button>לקבוע פגישה</button></Link>
         </div>
         <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
@@ -39,7 +39,7 @@ const Transformations = () => {
 
 
       <section id="transformSec" className='bg-[#fff5f5]'>
-        <h1 className='text-center h1 theme-blue-color  mb-24 max-md:mb-12 pt-32 max-md:pt-12'>Patient Transformations</h1>
+        <h1 className='text-center h1 theme-blue-color  mb-24 max-md:mb-12 pt-32 max-md:pt-12'>טרנספורמציות של מטופל</h1>
         <div className='container pb-36 max-md:pb-12'>
           {/* <span>Before</span>
           <span>After</span> */}
@@ -88,9 +88,9 @@ const Transformations = () => {
                 <img src={serviceGirl} className='w-100 h-100' />
               </div>
               <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
-                <h6 className='text-[#3385d7] fw-bold mb-3'>ORDER A VISIT</h6>
-                <h2 className='text-3xl md:text-5xl text-white'>Our top specialists are waiting to help you. Contact with us!</h2>
-                <Link to="/appointment"><button>MAKE AN APPOINTMENT</button></Link>
+                <h6 className='text-[#3385d7] fw-bold mb-3'>הזמינו ביקור</h6>
+                <h2 className='text-3xl md:text-5xl text-white'>המומחים המובילים שלנו מחכים לעזור לך. צור איתנו קשר!</h2>
+                <Link to="/appointment"><button>לקבוע פגישה</button></Link>
               </div>
             </div>
           </div>

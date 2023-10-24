@@ -30,11 +30,11 @@ const Home = () => {
     <div id='homePage'>
       <header className='d-flex max-sm:flex-col-reverse'>
         <div id='leftSideHeader' className='max-sm:h-auto col-7 p-4 max-sm:w-auto max-sm:text-center max-sm:justify-items-center'>
-          <h6 className='mb-5' >WELCOME TO OUR CLINIC</h6>
-          <h1 className='mb-0 text-white'>Make your</h1>
-          <h1 className='text-white mb-5'>smile Shine</h1>
+        <h6 className="mb-5">ברוכים הבאים לקליניקה שלנו</h6>
+          <h1 className="mb-0 text-white">הפוך את שלך</h1>
+          <h1 className="text-white mb-5">חיוך לזרוח</h1>
           <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-          <Link to="/appointment"><button>MAKE AN APPOINTMENT</button></Link>
+          <Link to="/appointment"><button>לקבוע פגישה</button></Link>
         </div>
         <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
@@ -43,20 +43,22 @@ const Home = () => {
 
 
       <section id='serviceSec'>
-        <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>Our Services</h1>
+        <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>בחר שירות</h1>
         <div className='container pb-36 max-md:pb-12'>
           <div id='treatments' className='grid grid-cols-3 gap-5 max-sm:grid-cols-1'>
             <Link to="/service-mouth-dental">
               <div className='service   service1  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 mt-3 mb-6'>Mouth dental implant</h6>
+                  <h6 className='text-black text-center h2 mt-3 mb-6'>השתלת שיניים בפה</h6>
                   <div className='text-white text-center textDiv '>
-                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                      A jaw without teeth or with destroyed teeth can be restored today with the help of special implants. On the day of treatment, the implants are inserted and restored with a temporary bridge.
+                      לסת מחוסרת שיניים או עם שיניים הרוסות ניתן היום לשקם בעזרת שתלים מיוחדים. ביום הטיפול מחדירים את השתלים ומשקמים עם גשר זמני.
+
+
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                      READ MORE
+                      קרא עוד
                     </button>
                   </div>
                 </div>
@@ -66,15 +68,17 @@ const Home = () => {
             <Link to="/service-basal-graft">
               <div className='service   service2  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>BASAL GRAFT</h6>
+                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>השתלת בזאל</h6>
                   <div className='text-white text-center textDiv '>
-                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                      1. Implantation with final restoration within two days.
-                      2. Solutions for difficult cases due to complicated problems actually the possibility of restoration of zirconia crowns on top of the implants.
+                      1. השתלה עם שיקום סופי תוך יומיים.
+                      2. פתרונות למקרים קשים בגלל בעיות מסובכות בעצם אפשרות שיקום של כתרי זירקוניה על גבי השתלים.
+
+
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                      READ MORE
+                      קרא עוד
                     </button>
                   </div>
                 </div>
@@ -84,14 +88,16 @@ const Home = () => {
             <Link to="/service-zirconia-crowns">
               <div className='service   service3  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>Zirconia crowns</h6>
+                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>כתרי זירקוניה</h6>
                   <div className='text-white text-center textDiv '>
-                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                      Wearing full zirconia crowns with diamond coating in a computerized design in the shape of the complete and beautiful tooth on the damaged tooth.
+                      הלבשת כתרי זירקוניה מלאה עם ציפוי יהלום בעיצוב ממוחשב בצורת השן השלמה והיפה על השן הפגומה.
+
+
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                      READ MORE
+                      קרא עוד
                     </button>
                   </div>
                 </div>
@@ -100,14 +106,15 @@ const Home = () => {
             <Link to="/service-ct-scan">
               <div className='service   service4  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>CT scan</h6>
+                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>סריקת סי טי</h6>
                   <div className='text-white text-center textDiv '>
-                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                      CT scan, very accurate measurements with the help of an intraoral scanner, saving time, and a process that is much more comfortable and clean for the patient.
+                      צילום CT מידות מדויקות מאוד בעזרת סורק אינטראורלי חיסכון בזמן, ותהליך שהוא הרבה יותר נוח ונקי למטופל.
+
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                      READ MORE
+                      קרא עוד
                     </button>
                   </div>
                 </div>
@@ -116,14 +123,16 @@ const Home = () => {
             <Link to="/service-transparent-orthodontics">
               <div className='service   service5  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 mt-3 mb-6'>Transparent orthodontics</h6>
+                  <h6 className='text-black text-center h2 mt-3 mb-6'>יישור שיניים שקוף</h6>
                   <div className='text-white text-center textDiv '>
-                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                      An innovative method of straightening teeth with invisible transparent braces that allows the patient to undergo aesthetic teeth straightening.
+                      שיטה חדשנית ליישור שיניים ע"י פלטות שקופות בלתי נראות שמאפשר למטופל לעבור יישור שיניים אסטטי.
+
+
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                      READ MORE
+                      קרא עוד
                     </button>
                   </div>
                 </div>
@@ -132,14 +141,15 @@ const Home = () => {
             <Link to="/service-panorama-photography">
               <div className='service   service6  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 mt-3 mb-6'>Panorama photography</h6>
+                  <h6 className='text-black text-center h2 mt-3 mb-6'>                          צילום פנורמה
+                  </h6>
                   <div className='text-white text-center textDiv '>
-                    <h6 className='h4 mb-4'>Treatment description</h6>
+                    <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
-                      Panoramic photography is an umbrella term for various techniques that can be used to create images with a very wide viewing angle.
+                      צילום פנורמי הוא כינוי כולל לטכניקות שונות שניתן להשתמש בהן ליצירת תמונות עם זווית צפייה רחבה מאוד.
                     </p>
                     <button className='mt-4  py-2 mb-4 font-semibold text-[#656B6F] relative hover:text-[#336cd7] duration-300'>
-                      READ MORE
+                      קרא עוד
                     </button>
                   </div>
                 </div>
@@ -164,8 +174,8 @@ const Home = () => {
             <div className="carousel-inner">
               <div className="carousel-item h-auto active d-flex gap-28 max-sm:gap-4 max-lg:gap-6" data-bs-interval="10000">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
-                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>המלצות</h1>
+                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>קח את זה מהמטופלים שלנו</h2>
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi1} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -178,9 +188,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>After a long and tiring journey of 6 second doctors who were not ready to give me dental implants, I arrived at Hamudi's clinic and to my surprise I received answers to every question! And I was told yes, you will have two and a perfect smile. Dr. Eid Mediham, tolerant, gentle and cute, bypassed the nerve, planted implants beyond what was expected! !!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>לאחר מסע ארוך ומייגע של 6 רופאים שלא היו מוכנים לתת לי השתלות שיניים, הגעתי למרפאה של חמודי ולהפתעתי קיבלתי תשובות לכל שאלה! ונאמר לי שכן, יהיו לך שניים וחיוך מושלם. ד"ר עיד מדיהם, סובלני, עדין וחמוד, עקף את העצב, שתל שתלים מעבר למצופה! !!!</p>
 
-                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Rona President.</h6>
+                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>- רונה הנשיאה.</h6>
                   <button type="button" className='mr-7 align-middle pb-14 max-sm:pb-8' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -195,8 +205,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6" data-bs-interval="2000">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
-                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>המלצות</h1>
+                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>קח את זה מהמטופלים שלנו</h2>
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi3} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -209,9 +219,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>Muhammad is the most professional doctor I have ever known, extremely patient. I performed dental treatment at a high level, most satisfied.! It's nice to be in the clinic. I highly recommend it.</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>מוחמד הוא הרופא הכי מקצועי שהכרתי, סבלני ביותר. ביצעתי טיפול שיניים ברמה גבוהה, הכי מרוצה.! זה נחמד להיות במרפאה. אני מאוד ממליץ על זה.</p>
 
-                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Ricky Malka.</h6>
+                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>- ריקי מלכה.</h6>
                   <button type="button" className='mr-7 align-middle pb-14 max-sm:pb-8' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -226,8 +236,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
-                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>המלצות</h1>
+                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>קח את זה מהמטופלים שלנו</h2>
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi2} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -240,9 +250,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>It is highly recommended. Professional staff, nice people and wholehearted service</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>זה מומלץ מאוד. צוות מקצועי, אנשים נחמדים ושירות מכל הלב</p>
 
-                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Fathalla Mreh.</h6>
+                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— פתאלה מרה.</h6>
                   <button type="button" className='mr-7 align-middle pb-14 max-sm:pb-8' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -257,8 +267,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
-                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>המלצות</h1>
+                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>קח את זה מהמטופלים שלנו</h2>
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi4} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -271,9 +281,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>This is the doctor. the therapist Best. that I have met in my life. Always. Laughs respectfully. Great honor. meet a person like cutie the doctor. also helps. to people from Ukraine Better than you think. I recommend with warmth and love 🌹🌹🌹❤️❤️❤️❤️</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>זה הרופא. המטפל הטוב ביותר. שפגשתי בחיי. תמיד. צוחק בכבוד. כבוד גדול. לפגוש אדם כמו חמוד הרופא. גם עוזר. לאנשים מאוקראינה יותר טוב ממה שאתה חושב. ממליצה בחום ובאהבה 🌹🌹🌹❤️❤️❤️❤️</p>
 
-                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Ilan Zahov.</h6>
+                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— אילן זהוב.</h6>
                   <button type="button" className='mr-7 align-middle pb-14 max-sm:pb-8' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -288,8 +298,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>Testimonials</h1>
-                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-10 max-md:mb-2'>המלצות</h1>
+                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>קח את זה מהמטופלים שלנו</h2>
 
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi6} className='rounded-full h-[100px] w-[100px]'>
@@ -303,9 +313,11 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>I underwent dental treatments and implants, I wholeheartedly recommend the professional work, the experienced and reliable team. Cheers!!!</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>עברתי טיפולי שיניים והשתלות, ממליצה מכל הלב על העבודה המקצועית, הצוות המנוסה והאמין. לחיים!!!
 
-                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Igal Todover.</h6>
+                  </p>
+
+                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>- כל תודובר.</h6>
                   <button type="button" className='mr-7 align-middle pb-14 max-sm:pb-8' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
                   </button>
@@ -321,8 +333,8 @@ const Home = () => {
               </div>
               <div className="carousel-item h-auto  d-flex gap-28 max-sm:gap-4 max-lg:gap-6">
                 <div className='col-sm-7 text-center text-sm-end max-sm:p-4'>
-                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-8 max-md:mb-6'>Testimonials</h1>
-                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>Take it from our patients</h2>
+                  <h1 className=' h1 mr-sm-20 theme-blue-color mb-10 pt-14 max-md:pt-8 max-md:mb-6'>המלצות</h1>
+                  <h2 className='h2 mb-16 max-md:mb-6 theme-dark-blue'>קח את זה מהמטופלים שלנו</h2>
                   <div className='d-flex justify-center d-block d-sm-none'>
                     <img src={testi5} className='rounded-full h-[100px] w-[100px]'>
                     </img>
@@ -335,9 +347,9 @@ const Home = () => {
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
                   <img className='inline' src={star}></img>
-                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>Hamudi Alof is highly recommended👍 professional staff 💉 nice people 🥰 and service from the heart 🧡 zirconia crowns 😬 with diamond coating 🤩</p>
+                  <p className='mt-4 text-end pl-96 h-20 max-xl:pl-4 max-xl:h-max max-2xl:pl-8 max-2xl:h-max max-sm:h-[155px] max-sm:text-sm'>חמודי אלוף מומלץ בחום👍 צוות מקצועי 💉 אנשים נחמדים 🥰 ושירות מכל הלב 🧡 כתרי זירקוניה 😬 בציפוי יהלום 🤩</p>
 
-                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>— Barodi Rap.</h6>
+                  <h6 className='h5 mb-5 max-sm:!mb-5 font-bold mt-4 theme-dark-blue max-sm:text-end'>- פארודית ראפ.</h6>
 
                   <button type="button" className='mr-7 align-middle pb-14 max-sm:pb-8' data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <TfiArrowCircleLeft color='#3385D7' size={"40"} />
@@ -367,8 +379,8 @@ const Home = () => {
       </section>
 
       <section id="expSec" className=''>
-        <h1 className='text-center h1 text-white pt-32 max-md:pt-12'>Patient Experiences</h1>
-        <h1 className='text-center h2 theme-blue-color mb-24 max-md:mb-12 mt-4 '>See what patients have to say about their experience</h1>
+        <h1 className='text-center h1 text-white pt-32 max-md:pt-12'>חוויות מטופל</h1>
+        <h1 className='text-center h2 theme-blue-color mb-24 max-md:mb-12 mt-4 '>ראה מה יש למטופלים לומר על החוויה שלהם</h1>
         <div className='container pb-36 max-md:pb-12'>
 
           <div className='row justify-center gap-y-10 '>
@@ -382,7 +394,7 @@ const Home = () => {
       </section>
 
       <section id="transformSec" className=''>
-        <h1 className='text-center h1 theme-blue-color  mb-24 max-md:mb-12 pt-32 max-md:pt-12'>Patient Transformations</h1>
+        <h1 className='text-center h1 theme-blue-color  mb-24 max-md:mb-12 pt-32 max-md:pt-12'>השירותים שלנו</h1>
         <div className='container pb-36 max-md:pb-12'>
           {/* <span>Before</span>
           <span>After</span> */}

@@ -31,7 +31,7 @@ const Appointment = () => {
     if (currentPage != 2) {
       setCurrentPage(currentPage + 1)
     } else {
-        alert("EMAIL SEND IS REMAINING ONLY, THANKS")
+      alert("EMAIL SEND IS REMAINING ONLY, THANKS")
     }
   };
 
@@ -42,9 +42,9 @@ const Appointment = () => {
           id="leftSideHeader"
           className="max-sm:h-auto col-7 p-4 max-sm:w-auto max-sm:text-center max-sm:justify-items-center"
         >
-          <h6 className="mb-5">WELCOME TO OUR CLINIC</h6>
-          <h1 className="mb-0 text-white">Make your</h1>
-          <h1 className="text-white mb-5">smile Shine</h1>
+          <h6 className="mb-5">ברוכים הבאים לקליניקה שלנו</h6>
+          <h1 className="mb-0 text-white">הפוך את שלך</h1>
+          <h1 className="text-white mb-5">חיוך לזרוח</h1>
           <p className="text-white fw-bold max-sm:w-full">
             lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa
             dsadsad asdsad asdsad sadsad asd sad sadsad asdsa
@@ -58,19 +58,19 @@ const Appointment = () => {
 
       <section id="appointFormSec">
         <h1 className="text-center h1 theme-blue-color  mb-24 pt-32 max-md:pt-14 max-md:mb-10">
-          Make An Appointment
+          לקבוע פגישה
         </h1>
         <div className="container pb-36 max-md:pb-12">
           <Stepper activeStep={currentPage} className="mb-14 max-md:mb-6">
-            <Step label="Services" className="step1" />
-            <Step label="Date & Location" className="step2" />
-            <Step label="Details" className="step3" />
+            <Step label="שירותים" className="step1" />
+            <Step label="תאריך ומיקום" className="step2" />
+            <Step label="פרטים" className="step3" />
           </Stepper>
 
           {currentPage === 0 && (
             <>
               <h3 className="mb-14 h3 max-md:mb-8 theme-dark-blue fw-bold text-center ">
-                Choose Service
+                בחר שירות
               </h3>
               <section id="serviceSec">
                 <div className="container max-w-[1350px]">
@@ -79,9 +79,8 @@ const Appointment = () => {
                     className="grid grid-cols-3 gap-5 max-sm:grid-cols-1"
                   >
                     <div
-                      className={`service service1  duration-300 h-52 ${
-                        serviceSelect === 1 && "SelectedService"
-                      }`}
+                      className={`service service1  duration-300 h-52 ${serviceSelect === 1 && "SelectedService"
+                        }`}
                       onClick={() => {
                         setServiceName("Mouth dental implant");
                         setServiceSelect(1);
@@ -89,15 +88,14 @@ const Appointment = () => {
                     >
                       <div className="relative mainTextDiv">
                         <h6 className="text-white text-center h2 mt-3 mb-6">
-                          Mouth dental implant
+                          השתלת שיניים בפה
                         </h6>
                         <div className="text-white text-center textDiv "></div>
                       </div>
                     </div>
                     <div
-                      className={`service service2  duration-300 h-52 ${
-                        serviceSelect === 2 && "SelectedService"
-                      }`}
+                      className={`service service2  duration-300 h-52 ${serviceSelect === 2 && "SelectedService"
+                        }`}
                       onClick={() => {
                         setServiceName("BASAL GRAFT");
                         setServiceSelect(2);
@@ -105,15 +103,14 @@ const Appointment = () => {
                     >
                       <div className="relative mainTextDiv">
                         <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
-                          BASAL GRAFT
+                          השתלת בזאל
                         </h6>
                         <div className="text-white text-center textDiv "></div>
                       </div>
                     </div>
                     <div
-                      className={`service service3  duration-300 h-52 ${
-                        serviceSelect === 3 && "SelectedService"
-                      }`}
+                      className={`service service3  duration-300 h-52 ${serviceSelect === 3 && "SelectedService"
+                        }`}
                       onClick={() => {
                         setServiceName("Zirconia crowns");
                         setServiceSelect(3);
@@ -121,15 +118,14 @@ const Appointment = () => {
                     >
                       <div className="relative mainTextDiv">
                         <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
-                          Zirconia crowns
+                          כתרי זירקוניה
                         </h6>
                         <div className="text-white text-center textDiv "></div>
                       </div>
                     </div>
                     <div
-                      className={`service service4  duration-300 h-52 ${
-                        serviceSelect === 4 && "SelectedService"
-                      }`}
+                      className={`service service4  duration-300 h-52 ${serviceSelect === 4 && "SelectedService"
+                        }`}
                       onClick={() => {
                         setServiceName("CT scan");
                         setServiceSelect(4);
@@ -137,15 +133,14 @@ const Appointment = () => {
                     >
                       <div className="relative mainTextDiv">
                         <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
-                          CT scan
+                          סריקת סי טי
                         </h6>
                         <div className="text-white text-center textDiv "></div>
                       </div>
                     </div>
                     <div
-                      className={`service service5  duration-300 h-52 ${
-                        serviceSelect === 5 && "SelectedService"
-                      }`}
+                      className={`service service5  duration-300 h-52 ${serviceSelect === 5 && "SelectedService"
+                        }`}
                       onClick={() => {
                         setServiceName("Transparent orthodontics");
                         setServiceSelect(5);
@@ -153,15 +148,14 @@ const Appointment = () => {
                     >
                       <div className="relative mainTextDiv">
                         <h6 className="text-white text-center h2 mt-3 mb-6">
-                          Transparent orthodontics
+                          יישור שיניים שקוף
                         </h6>
                         <div className="text-white text-center textDiv "></div>
                       </div>
                     </div>
                     <div
-                      className={`service service6  duration-300 h-52 b ${
-                        serviceSelect === 6 && "SelectedService"
-                      }`}
+                      className={`service service6  duration-300 h-52 b ${serviceSelect === 6 && "SelectedService"
+                        }`}
                       onClick={() => {
                         setServiceName("Panorama photography");
                         setServiceSelect(6);
@@ -169,7 +163,7 @@ const Appointment = () => {
                     >
                       <div className="relative mainTextDiv">
                         <h6 className="text-white text-center h2 mt-3 mb-6">
-                          Panorama photography
+                          צילום פנורמה
                         </h6>
                         <div className="text-white text-center textDiv "></div>
                       </div>
@@ -183,7 +177,7 @@ const Appointment = () => {
           {currentPage === 1 && (
             <>
               <h3 className="mb-14 h3 max-md:mb-8 theme-dark-blue fw-bold text-center ">
-                Choose Date and Time
+                בחר תאריך ושעה
               </h3>
               <section id="DtLocSec">
                 <div className="container max-w-[1350px]">
@@ -196,7 +190,7 @@ const Appointment = () => {
                     </div>
                     <div className="locationsDiv">
                       <h3 className="mt-14 mb-14 h3 theme-dark-blue fw-bold text-center ">
-                        Choose Closet Clinic
+                        בחר מרפאת ארונות
                       </h3>
                       <div className="d-flex gap-5">
                         <div
@@ -207,9 +201,8 @@ const Appointment = () => {
                           className="col mapsDiv relative"
                         >
                           <iframe
-                            className={`maps  duration-300 ${
-                              mapSelect === 1 && "SelectedService"
-                            }`}
+                            className={`maps  duration-300 ${mapSelect === 1 && "SelectedService"
+                              }`}
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.276234777326!2d35.18631!3d32.86441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151dca9a3e03c6c5%3A0x47af1042f792feb1!2sNorthern%20Road%2FTamra!5e0!3m2!1sen!2s!4v1695833819264!5m2!1sen!2s"
                             width="100%"
                             height="300px"
@@ -228,9 +221,8 @@ const Appointment = () => {
                           className="col mapsDiv relative"
                         >
                           <iframe
-                            className={`maps duration-300 ${
-                              mapSelect === 2 && "SelectedService"
-                            }`}
+                            className={`maps duration-300 ${mapSelect === 2 && "SelectedService"
+                              }`}
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d432691.3673359095!2d34.852524!3d32.085438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4a033cf150eb%3A0xe503ce74e939a47a!2sHa-Zeitim%20St%2096%2C%20Giv&#39;at%20Shmu&#39;el%2C%20Israel!5e0!3m2!1sen!2sus!4v1695831105312!5m2!1sen!2sus"
                             width="100%"
                             height="300px"
@@ -250,7 +242,7 @@ const Appointment = () => {
           {currentPage === 2 && (
             <>
               <h3 className="mb-14 max-md:mb-8 h3 theme-dark-blue fw-bold text-center ">
-                Fill the form
+              מלא את הטופס
               </h3>
 
               <section id="detailSec">
@@ -263,17 +255,17 @@ const Appointment = () => {
                       >
                         <div id="">
                           <h6 className="h6 theme-blue-color fw-bold">
-                            Service:{" "}
+                          שירות:{" "}
                             <span className="text-[#8d8d8d]">
                               {serviceName}
                             </span>
                           </h6>
                           <h6 className="h6 theme-blue-color fw-bold">
-                            Clinic:{" "}
+                          מרפאה:{" "}
                             <span className="text-[#8d8d8d]">{clinicName}</span>
                           </h6>
                           <h6 className="h6 theme-blue-color fw-bold">
-                            Appointment Date:{" "}
+                          תאריך פגישה{" "}
                             <span className="text-[#8d8d8d]">
                               {moment(date).format("MMMM Do YYYY, h:mm:ss a")}
                             </span>
@@ -290,7 +282,7 @@ const Appointment = () => {
                                 type="text"
                                 id="fname"
                                 name="fname"
-                                placeholder="Your name.."
+                                placeholder="השם שלך.."
                                 onChange={handleChange}
                               />
                               {/* <label for="lname">Last Name</label> */}
@@ -298,7 +290,7 @@ const Appointment = () => {
                                 type="text"
                                 id="lname"
                                 name="lname"
-                                placeholder="Your last name.."
+                                placeholder="שם משפחתך.."
                                 onChange={handleChange}
                               />
 
@@ -307,7 +299,7 @@ const Appointment = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="Your email.."
+                                placeholder="האימייל שלך.."
                                 onChange={handleChange}
                               />
 
@@ -316,7 +308,7 @@ const Appointment = () => {
                                 id="subject"
                                 className=" h-40 mb-16"
                                 name="messege"
-                                placeholder="Write message.."
+                                placeholder="כתוב הודעה.."
                                 onChange={handleChange}
                               ></textarea>
                             </form>
@@ -345,7 +337,7 @@ const Appointment = () => {
               }
               onClick={() => handleNext()}
             >
-              {currentPage === 2 ? "Finish" : "Next"}
+              {currentPage === 2 ? "סיים" : "הַבָּא"}
             </button>
             <button
               id="prvBtn"
@@ -353,7 +345,7 @@ const Appointment = () => {
               disabled={currentPage <= 0}
               onClick={() => setCurrentPage(currentPage - 1)}
             >
-              Previous
+              קודם
             </button>
           </div>
         </div>
