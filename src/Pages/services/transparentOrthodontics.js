@@ -23,7 +23,7 @@ const TransparentOrthodontics = () => {
                     <div className='imgDiv col-lg-6'>
                         <img src={serviceImg} className='h-full w-full' alt=''></img>
                     </div>
-                    <div className='serviceDetailsDiv bg-[#f3f3f3] col-lg-6 max-xl:p-10 p-20'>
+                    <div className='serviceDetailsDiv text-end bg-[#f3f3f3] col-lg-6 max-xl:p-10 p-20'>
                         <h1 className='theme-blue-color h1'>Dental Implants</h1>
                         <h5 className='h5 relative before:absolute before:border-b-4 before:border-[#1f2e88] before:h-[30px] before:w-[100px] before:bottom-[-30px]'>Dental implantation is a groundbreaking medical treatment, which is an alternative to dentures in cases of loss of natural teeth. The treatment is very widespread, has high chances of success, and is done by qualified dentists, even if they are not experts in the field. The surgical procedure itself includes anesthesia and insertion of an implant into the jawbone, and the mounting of a crown over it (by gluing or screwing).</h5>
                         <p className='mt-5'>A single tooth or several single teeth can be performed, as well as dental implants based on a bridge connected to implants (all in 4 or all in 6)</p>
