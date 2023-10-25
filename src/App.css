@@ -539,6 +539,9 @@ textarea {
 
 
 /************ TRANSFORMATIONS PAGE STARTS   ************/
+.react-datepicker-popper {
+  z-index: 200 !important;
+}
 #appointSec .appointDiv {
   padding: 60px 5% 70px;
   background-color: #3043b8;

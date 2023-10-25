@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import Datetime from "react-datetime";
-import "react-datetime/css/react-datetime.css";
+import React, { useEffect, useState } from "react";
 import { Step, Stepper } from "react-form-stepper";
 import moment from "moment";
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 const Appointment = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [serviceSelect, setServiceSelect] = useState(0);
@@ -11,14 +10,27 @@ const Appointment = () => {
   const [clinicName, setClinicName] = useState("");
   const [mapSelect, setMapSelect] = useState(0);
   const [date, setDate] = useState(
-    moment().startOf("day").format("YYYY-MM-DD hh:mm")
+    new Date()
   );
+  console.log(date);
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
     email: "",
     messege: "",
   });
+  useEffect(() => {
+    const href = window.location.href.substring(
+      window.location.href.lastIndexOf('#') + 1
+    );
+    const element = document.getElementById(href);
+    console.log("element", element);
+    setTimeout(() => {
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  }, []);
 
   const handleChange = (e) => {
     const { value, name } = e.target;
@@ -189,9 +201,20 @@ const Appointment = () => {
                 <div className="container max-w-[1350px]">
                   <div className="row justify-center">
                     <div className="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-5 col-8 dateDiv">
-                      <Datetime
-                        onChange={(value) => setDate(value)}
-                        initialValue={date}
+
+                      <DatePicker
+                        className="border-2 p-2 rounded-lg border-black cursor-pointer"
+                        selected={date}
+                        onChange={(date) => setDate(date)}
+                        showTimeSelect
+                        minDate={new Date()}
+                        timeFormat="HH:mm"
+                        timeIntervals={15}
+                        onKeyDown={(e) => {
+                          e.preventDefault();
+                        }}
+                        timeCaption="time"
+                        dateFormat="MMMM d, yyyy h:mm aa"
                       />
                     </div>
                     <div className="locationsDiv">

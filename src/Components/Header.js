@@ -44,7 +44,7 @@ const Header = () => {
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <NavLink
                             onClick={() => handleCollapse()}
-                            to="/appointment"
+                            to="/appointment#appointFormSec"
                             className={" text-white text-decoration-none fw-bold"}
                         >
                             הזמינו תור
