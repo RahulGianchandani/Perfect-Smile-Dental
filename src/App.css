@@ -253,7 +253,7 @@ footer .whatsappICON {
   width: 100%;
   position: absolute;
   z-index: -1;
-  filter: blur(0.4px) brightness(0.8);
+  filter: blur(0.4px) brightness(0.7);
 }
 
 #homePage #serviceSec .service1::before {
@@ -295,7 +295,7 @@ footer .whatsappICON {
   z-index: -1;
   inset: 0;
   position: absolute;
-  background-image: linear-gradient(0deg, #3385d7, transparent 100%);
+  background-image: linear-gradient(0deg, #14a966, transparent 100%);
   /* background-position: bottom; */
   transition: background-position 1s, height 1s;
   height: 22%;
@@ -530,7 +530,7 @@ textarea {
   border-radius: 50px;
   box-shadow: 2px 44px 32px 2px rgba(0, 0, 0, 0.02);
   border-radius: 60px;
-  transform: translateY(-75px);
+  transform: translateY(-35px);
 
 }
 
@@ -694,5 +694,9 @@ textarea {
 
   #homePage header #leftSideHeader p {
     width: auto;
+  }
+
+  #homePage #serviceSec .service::before {
+    background-size: contain;
   }
 }

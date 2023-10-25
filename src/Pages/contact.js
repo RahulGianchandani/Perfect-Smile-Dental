@@ -10,7 +10,7 @@ import { FaFacebook, FaInstagram, FaWaze } from 'react-icons/fa'
 const Contact = () => {
   return (
     <div id='contactPage'>
-      <header >
+      <header className='max-sm:!h-auto'>
         <div className='container max-w-[1350px]'>
           <div className='d-flex max-md:!block'>
             <div className='leftSideImg col-md-7'>
@@ -23,7 +23,7 @@ const Contact = () => {
               <h1 className='mb-0 text-white'>תשאיר לנו א </h1>
               <h1 className='text-white mb-5'>הוֹדָעָה</h1>
               <p className='text-white fw-bold md:pl-40'>lorep sadsa sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-              <div className="d-flex mt-5 text-center max-md:justify-center justify-end ">
+              <div className="sm:flex mt-4 sm:mt-5 text-center max-md:justify-center justify-end ">
                 <div>
                   <img src={phone} className='inline'></img>
                   <p className="text-white w-100 mb-3 mt-4">
@@ -32,7 +32,7 @@ const Contact = () => {
                   <h5 className="h5"><a className="text-white" href="tel:035-505-448">035-505-448</a></h5>
                   <h5 className="h5"><a className="text-white" href="tel:052-686-6442">052-686-6442</a></h5>
                 </div>
-                <div className='ml-10 '>
+                <div className='sm:ml-10 max-sm:mt-5 max-sm:mb-10 '>
                   <img src={email} className='inline'></img>
                   <p className="text-white w-100 mb-3 mt-4">
                   כתובת הדואר שלנו
@@ -49,7 +49,7 @@ const Contact = () => {
       </section>
 
       <section id='formSec' className=' bg-[#ffffff12] lg:h-[490px]'>
-        <div className='container pt-20 pb-10'>
+        <div className='container pt-10 pb-10'>
           <div className='d-flex  justify-center max-md:flex-wrap gap-16'>
             <form className='col-12 col-md-8 col-lg-8 col-xl-6'>
               {/* <label for="fname">First Name</label> */}
@@ -80,6 +80,9 @@ const Contact = () => {
               <p className=' text-[#8d8d8d] mt-3'>
                 <b>צפון</b><br />
                 טמרה כביש צפוני</p>
+              <p className=' text-[#8d8d8d] mt-3'>
+                <b>צפון</b><br />
+                16 קריית אתא העצמאות</p>
             </div>
             <div className='col-4 col-md-2 col-lg-2 col-xl-3' id='socialDiv'>
               <h4 class="h4 theme-blue-color fw-bold">חֶברָתִי</h4>

@@ -37,6 +37,10 @@ const Footer = () => {
                             <a href='https://www.google.com/maps/place/Northern+Road%2FTamra/@32.8644145,35.1841213,17z/data=!3m1!4b1!4m5!3m4!1s0x151dca9a3e03c6c5:0x47af1042f792feb1!8m2!3d32.86441!4d35.18631' target='_blank'>
                                 <p className='mb-0'>טמרה כביש צפוני</p>
                             </a>
+                            <h5 className='mb-3'>צפון</h5>
+                            <a href='https://maps.app.goo.gl/rmnjMy2Z3HJoBnWt9' target='_blank'>
+                                <p className='mb-0'>16 קריית אתא העצמאות</p>
+                            </a>
                         </section>
 
                     </div>

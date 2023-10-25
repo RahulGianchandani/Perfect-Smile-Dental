@@ -49,7 +49,7 @@ const Home = () => {
             <Link to="/service-mouth-dental">
               <div className='service   service1  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 mt-3 mb-6'>השתלת שיניים בפה</h6>
+                  <h6 className='text-black text-center h1 mt-3 mb-6'>השתלת שיניים בפה</h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -68,7 +68,7 @@ const Home = () => {
             <Link to="/service-basal-graft">
               <div className='service   service2  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>השתלת בזאל</h6>
+                  <h6 className='text-black text-center h1 xl:mt-3 mb-6 max-xl:mt-8'>השתלת בזאל</h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -88,7 +88,7 @@ const Home = () => {
             <Link to="/service-zirconia-crowns">
               <div className='service   service3  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>כתרי זירקוניה</h6>
+                  <h6 className='text-black text-center h1 xl:mt-3 mb-6 max-xl:mt-8'>כתרי זירקוניה</h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -106,7 +106,7 @@ const Home = () => {
             <Link to="/service-ct-scan">
               <div className='service   service4  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 xl:mt-3 mb-6 max-xl:mt-8'>סריקת סי טי</h6>
+                  <h6 className='text-black text-center h1 xl:mt-3 mb-6 max-xl:mt-8'>סריקת סי טי</h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -123,7 +123,7 @@ const Home = () => {
             <Link to="/service-transparent-orthodontics">
               <div className='service   service5  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 mt-3 mb-6'>יישור שיניים שקוף</h6>
+                  <h6 className='text-black text-center h1 mt-3 mb-6'>יישור שיניים שקוף</h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>
@@ -141,7 +141,7 @@ const Home = () => {
             <Link to="/service-panorama-photography">
               <div className='service   service6  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h2 mt-3 mb-6'>                          צילום פנורמה
+                  <h6 className='text-black text-center h1 mt-3 mb-6'>                          צילום פנורמה
                   </h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>תיאור הטיפול</h6>

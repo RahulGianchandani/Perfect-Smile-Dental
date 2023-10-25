@@ -24,41 +24,50 @@ const Header = () => {
 
 
     }, [])
-
+    const handleCollapse = () => {
+        var nav = document.getElementById("navbarSupportedContent");
+        var btn = document.getElementById("navbarBtn");
+        nav.classList.remove("show");
+        btn.classList.add("collapsed");
+    };
 
     return (
         <nav class={`navbar navbar-expand-lg header ${navBg && "sticky"} max-sm:py-0`}>
 
-            
+
             <div class="container-fluid px-sm-5">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" id='navbarBtn' type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <RxHamburgerMenu color='#3385d7' />
                 </button>
                 <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <NavLink
+                            onClick={() => handleCollapse()}
                             to="/appointment"
-                            className={"text-white text-decoration-none fw-bold"}
+                            className={" text-white text-decoration-none fw-bold"}
                         >
                             הזמינו תור
 
                         </NavLink>
                         <NavLink
+                            onClick={() => handleCollapse()}
                             to="/contact"
-                            className={"text-white text-decoration-none ms-lg-5 fw-bold"}
+                            className={" text-white text-decoration-none ms-lg-5 fw-bold"}
                         >
                             צור קשר
                         </NavLink>
                         <NavLink
+                            onClick={() => handleCollapse()}
                             to="/transformations"
-                            className={"text-white text-decoration-none ms-lg-5 fw-bold"}
+                            className={" text-white text-decoration-none ms-lg-5 fw-bold"}
                         >
                             טרנספורמציות
                         </NavLink>
                         <NavLink
+                            onClick={() => handleCollapse()}
                             to="/"
-                            className={"text-white text-decoration-none ms-lg-5 fw-bold"}
+                            className={" text-white text-decoration-none ms-lg-5 fw-bold"}
                         >
                             דף הבית
 
