@@ -203,6 +203,7 @@ const Appointment = () => {
                           onClick={() => {
                             setClinicName("North, Tamra North Road");
                             setMapSelect(1);
+                            handleNext();
                           }}
                           className="col mapsDiv relative"
                         >
@@ -223,6 +224,7 @@ const Appointment = () => {
                               "The Center, 96 Zeytim St Givat Shmuel Or building in Givat"
                             );
                             setMapSelect(2);
+                            handleNext();
                           }}
                           className="col mapsDiv relative"
                         >
@@ -243,6 +245,7 @@ const Appointment = () => {
                               "North, Ha-Atsma'ut St 16"
                             );
                             setMapSelect(3);
+                            handleNext();
                           }}
                           className="col mapsDiv relative"
                         >
@@ -279,7 +282,7 @@ const Appointment = () => {
                         id="detailsSavedDiv"
                         className="d-flex justify-center"
                       >
-                        <div id="">
+                        <div id="" className="text-right">
                           <h6 className="h6 theme-blue-color fw-bold">
                             <span className="text-[#8d8d8d]">
                               {serviceName}
@@ -356,7 +359,7 @@ const Appointment = () => {
               className="disabled:cursor-not-allowed disabled:opacity-60"
               disabled={
                 // (currentPage === 0 && serviceSelect === 0) ||
-                (currentPage === 1 && mapSelect === 0) ||
+                // (currentPage === 1 && mapSelect === 0) ||
                 (currentPage === 2 &&
                   (formData?.fname === "" ||
                     formData?.lname === "" ||
