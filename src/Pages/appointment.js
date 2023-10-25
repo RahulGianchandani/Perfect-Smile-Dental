@@ -84,6 +84,7 @@ const Appointment = () => {
                       onClick={() => {
                         setServiceName("Mouth dental implant");
                         setServiceSelect(1);
+                        handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -99,6 +100,7 @@ const Appointment = () => {
                       onClick={() => {
                         setServiceName("BASAL GRAFT");
                         setServiceSelect(2);
+                        handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -114,6 +116,7 @@ const Appointment = () => {
                       onClick={() => {
                         setServiceName("Zirconia crowns");
                         setServiceSelect(3);
+                        handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -129,6 +132,7 @@ const Appointment = () => {
                       onClick={() => {
                         setServiceName("CT scan");
                         setServiceSelect(4);
+                        handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -144,6 +148,7 @@ const Appointment = () => {
                       onClick={() => {
                         setServiceName("Transparent orthodontics");
                         setServiceSelect(5);
+                        handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -159,6 +164,7 @@ const Appointment = () => {
                       onClick={() => {
                         setServiceName("Panorama photography");
                         setServiceSelect(6);
+                        handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -231,6 +237,26 @@ const Appointment = () => {
                             referrerpolicy="no-referrer-when-downgrade"
                           ></iframe>
                         </div>
+                        <div
+                          onClick={() => {
+                            setClinicName(
+                              "North, Ha-Atsma'ut St 16"
+                            );
+                            setMapSelect(3);
+                          }}
+                          className="col mapsDiv relative"
+                        >
+                          <iframe
+                            className={`maps duration-300 ${mapSelect === 3 && "SelectedService"
+                              }`}
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.5372669818494!2d35.1039157!3d32.8045267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151db6cac0426143%3A0x94cea34ec789f4f7!2sHa-Atsma&#39;ut%2C%20Kiryat%20Ata%2C%20Israel!5e0!3m2!1sen!2s!4v1698225586678!5m2!1sen!2s"
+                            width="100%"
+                            height="300px"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -242,7 +268,7 @@ const Appointment = () => {
           {currentPage === 2 && (
             <>
               <h3 className="mb-14 max-md:mb-8 h3 theme-dark-blue fw-bold text-center ">
-              מלא את הטופס
+                מלא את הטופס
               </h3>
 
               <section id="detailSec">
@@ -255,20 +281,22 @@ const Appointment = () => {
                       >
                         <div id="">
                           <h6 className="h6 theme-blue-color fw-bold">
-                          שירות:{" "}
                             <span className="text-[#8d8d8d]">
                               {serviceName}
                             </span>
+                            :שירות:{" "}
+
                           </h6>
                           <h6 className="h6 theme-blue-color fw-bold">
-                          מרפאה:{" "}
                             <span className="text-[#8d8d8d]">{clinicName}</span>
+                            :מרפאה:{" "}
                           </h6>
                           <h6 className="h6 theme-blue-color fw-bold">
-                          תאריך פגישה{" "}
                             <span className="text-[#8d8d8d]">
                               {moment(date).format("MMMM Do YYYY, h:mm:ss a")}
                             </span>
+                            :תאריך פגישה{" "}
+
                           </h6>
                         </div>
                       </div>
@@ -327,7 +355,7 @@ const Appointment = () => {
               id="nxtBtn"
               className="disabled:cursor-not-allowed disabled:opacity-60"
               disabled={
-                (currentPage === 0 && serviceSelect === 0) ||
+                // (currentPage === 0 && serviceSelect === 0) ||
                 (currentPage === 1 && mapSelect === 0) ||
                 (currentPage === 2 &&
                   (formData?.fname === "" ||

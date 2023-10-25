@@ -6,18 +6,18 @@ const ZirconiaCrowns
     = () => {
         return (
             <div id='homePage'>
-                <header className='d-flex max-sm:flex-col-reverse'>
-                    <div id='leftSideHeader' className='max-sm:h-auto col-7 p-4 max-sm:w-auto max-sm:text-center max-sm:justify-items-center'>
-                        <h6 className='mb-5' >WELCOME TO OUR CLINIC</h6>
-                        <h1 className='mb-0 text-white'>Make your</h1>
-                        <h1 className='text-white mb-5'>smile Shine</h1>
-                        <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-                        <Link to="/appointment"><button>לקבוע פגישה</button></Link>
-                    </div>
-                    <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
+                  <header className='d-flex max-sm:flex-col-reverse'>
+        <div id='leftSideHeader' className='max-sm:h-auto col-7 p-4 max-sm:w-auto max-sm:text-center max-sm:justify-items-center'>
+        <h6 className="mb-5">ברוכים הבאים לקליניקה שלנו</h6>
+          <h1 className="mb-0 text-white">הפוך את שלך</h1>
+          <h1 className="text-white mb-5">חיוך לזרוח</h1>
+          <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
+          <Link to="/appointment"><button>לקבוע פגישה</button></Link>
+        </div>
+        <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
-                    </div>
-                </header>
+        </div>
+      </header>
 
                 <section className='serviceDetailSec'>
                     <div className='d-lg-flex'>

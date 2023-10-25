@@ -384,9 +384,9 @@ const Home = () => {
         <div className='container pb-36 max-md:pb-12'>
 
           <div className='row justify-center gap-y-10 '>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=469&href=https%3A%2F%2Fwww.facebook.com%2Fdentistryperfectsmile%2Fvideos%2F590234879085678%2F&show_text=false&width=560&t=0" width="560" height="469" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" className='col-sm-6' allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=469&href=https%3A%2F%2Fwww.facebook.com%2Fdentistryperfectsmile%2Fvideos%2F590234879085678%2F&show_text=false&width=560&t=0" clas width="560" height="469" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" className='vidIframe col-sm-6 md:h-[300px] lg:h-[300px] xl:h-[469px]' allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
-            <iframe src="https://www.facebook.com/plugins/video.php?height=469&href=https%3A%2F%2Fwww.facebook.com%2Fdentistryperfectsmile%2Fvideos%2F3144463749138938%2F&show_text=false&width=560&t=0" width="560" height="469" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" className='col-sm-6' allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=469&href=https%3A%2F%2Fwww.facebook.com%2Fdentistryperfectsmile%2Fvideos%2F3144463749138938%2F&show_text=false&width=560&t=0" width="560" height="469" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameborder="0" className='vidIframe col-sm-6 md:h-[300px] lg:h-[300px] xl:h-[469px]' allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 
           </div>

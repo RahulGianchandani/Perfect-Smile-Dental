@@ -283,6 +283,7 @@ footer .whatsappICON {
 #homePage #serviceSec .service:hover .mainTextDiv:before {
   height: 100%;
   background-position: top;
+  background-image: linear-gradient(0deg, #14a966, transparent 100%);
 }
 
 #homePage #serviceSec .service .mainTextDiv {
@@ -295,11 +296,11 @@ footer .whatsappICON {
   z-index: -1;
   inset: 0;
   position: absolute;
-  background-image: linear-gradient(0deg, #14a966, transparent 100%);
+  background-image: linear-gradient(180deg, #14a966, transparent 100%);
   /* background-position: bottom; */
   transition: background-position 1s, height 1s;
-  height: 22%;
-  top: 0;
+  height: 40%;
+  top: 3px;
 }
 
 #homePage #serviceSec .service:hover>.mainTextDiv {
@@ -670,6 +671,9 @@ textarea {
     left: 20%;
   }
 
+  .vidIframe {
+    height: 249px;
+  }
 }
 
 /* media query */
@@ -699,4 +703,43 @@ textarea {
   #homePage #serviceSec .service::before {
     background-size: contain;
   }
+
+  .vidIframe {
+    height: 440px;
+  }
+}
+
+@media (width < 500px) {
+  .vidIframe {
+    height: 400px;
+  }
+
+}
+
+@media (width < 450px) {
+  .vidIframe {
+    height: 350px;
+  }
+
+}
+
+@media (width < 400px) {
+  .vidIframe {
+    height: 300px;
+  }
+
+}
+
+@media (width < 350px) {
+  .vidIframe {
+    height: 250px;
+  }
+
+}
+
+@media (width < 300px) {
+  .vidIframe {
+    height: 210px;
+  }
+
 }
