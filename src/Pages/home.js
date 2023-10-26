@@ -34,7 +34,7 @@ const Home = () => {
           <h1 className="mb-0 text-white">הפוך את שלך</h1>
           <h1 className="text-white mb-5">חיוך לזרוח</h1>
           <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-          <Link to="/appointment"><button>לקבוע פגישה</button></Link>
+          <Link to="/appointment#appointFormSec"><button>לקבוע פגישה</button></Link>
         </div>
         <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
@@ -44,8 +44,8 @@ const Home = () => {
 
       <section id='serviceSec'>
         <h1 className='text-center h1 theme-blue-color mb-24 pt-32 lg: max-lg:pt-12 max-lg:mb-12'>בחר שירות</h1>
-        <div className='container pb-36 max-md:pb-12'>
-          <div id='treatments' className='grid grid-cols-3 gap-5 max-sm:grid-cols-1'>
+        <div className='container xl:min-w-[1450px] pb-36 max-md:pb-12'>
+          <div id='treatments' className='grid  lg:grid-cols-2 xl:grid-cols-3  gap-5 grid-cols-1'>
             <Link to="/service-mouth-dental">
               <div className='service   service1  duration-300'>
                 <div className='relative mainTextDiv'>
@@ -68,7 +68,7 @@ const Home = () => {
             <Link to="/service-basal-graft">
               <div className='service   service2  duration-300'>
                 <div className='relative mainTextDiv'>
-                  <h6 className='text-black text-center h1 xl:mt-3 mb-6 max-xl:mt-8'>השתלת בזאל</h6>
+                  <h6 className='text-black text-center h1 mt-3 mb-6'>השתלת בזאל</h6>
                   <div className='text-white text-center textDiv '>
                     <h6 className='h4 mb-4'>תיאור הטיפול</h6>
                     <p className='text-center h-36 px-14 mt-2 text-lg'>

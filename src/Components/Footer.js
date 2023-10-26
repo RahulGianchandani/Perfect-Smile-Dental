@@ -27,18 +27,17 @@ const Footer = () => {
                         <section className='p-2'>
                             <h4 className='mb-3'>הכתובת שלנו</h4>
                             <h5 className='mb-3'>המרכז</h5>
-                            <a href='https://maps.google.com/maps?width=700&height=440&hl=en&q=%D7%A2%D7%91%D7%A2%D7%AA%20%D7%A9%D7%9E%D7%95%D7%90%D7%9C%2096%D7%94%D7%96%D7%99%D7%AA%D7%99%D7%9D+
-                                (Title)&ie=UTF8&t=&z=10&iwloc=B&output=embed' target='_blank'>
+                            <a href='https://ul.waze.com/ul?place=ChIJ61DxPANKHRUReqQ56XTOA-U&ll=32.08543840%2C34.85252370&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank'>
                                 <p className='mb-0'>רחוב הזיתים 96</p>
                                 <p className='mb-0'> גבעת שמואל</p>
                                 <p className='mb-3'>בניין אור בגבעה</p>
                             </a>
                             <h5 className='mb-3'>צפון</h5>
-                            <a href='https://www.google.com/maps/place/Northern+Road%2FTamra/@32.8644145,35.1841213,17z/data=!3m1!4b1!4m5!3m4!1s0x151dca9a3e03c6c5:0x47af1042f792feb1!8m2!3d32.86441!4d35.18631' target='_blank'>
+                            <a href='https://ul.waze.com/ul?place=ChIJ29BIz77LHRURd2BlieZyMN0&ll=32.85574400%2C35.19934700&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank'>
                                 <p className='mb-0'>טמרה כביש צפוני</p>
                             </a>
                             <h5 className='mb-3'>צפון</h5>
-                            <a href='https://maps.app.goo.gl/rmnjMy2Z3HJoBnWt9' target='_blank'>
+                            <a href='https://ul.waze.com/ul?place=EiJIYS1BdHNtYSd1dCBTdCwgS2lyeWF0IEF0YSwgSXNyYWVsIi4qLAoUChIJQ2FCwMq2HRUR9_SJx06jzpQSFAoSCVNWlpWlth0VER_Wcq80xzJs&ll=32.80452670%2C35.10391570&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank'>
                                 <p className='mb-0'>16 קריית אתא העצמאות</p>
                             </a>
                         </section>

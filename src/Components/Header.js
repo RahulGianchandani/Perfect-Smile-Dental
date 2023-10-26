@@ -32,7 +32,7 @@ const Header = () => {
     };
 
     return (
-        <nav class={`navbar navbar-expand-lg header ${navBg && "sticky"} max-sm:py-0`}>
+        <nav class={`navbar navbar-expand-lg header ${navBg && "sticky"} bg-black max-sm:py-0`}>
 
 
             <div class="container-fluid px-sm-5">

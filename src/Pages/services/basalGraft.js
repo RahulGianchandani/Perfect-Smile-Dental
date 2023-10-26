@@ -12,7 +12,7 @@ const BasalGraft
           <h1 className="mb-0 text-white">הפוך את שלך</h1>
           <h1 className="text-white mb-5">חיוך לזרוח</h1>
           <p className='text-white fw-bold max-sm:w-full'>lorep sadsas sadsa dasdsad asdsad sadas dasdsad asdsad asdsad asdsa dsadsad asdsad asdsad sadsad asd sad sadsad asdsa</p>
-          <Link to="/appointment"><button>לקבוע פגישה</button></Link>
+          <Link to="/appointment#appointFormSec"><button>לקבוע פגישה</button></Link>
         </div>
         <div id='rightSideHeader' className='col-5 max-sm:w-auto max-sm:h-[500px]'>
 
@@ -47,7 +47,7 @@ const BasalGraft
                                 <div className='rightSideText max-sm:text-center max-sm:mt-5 '>
                                     <h6 className='text-[#3385d7] fw-bold mb-3'>הזמינו ביקור</h6>
                                     <h2 className='text-3xl md:text-5xl text-white'>המומחים המובילים שלנו מחכים לעזור לך. צור איתנו קשר</h2>
-                                    <Link to="/appointment"><button>לקבוע פגישה</button></Link>
+                                    <Link to="/appointment#appointFormSec"><button>לקבוע פגישה</button></Link>
                                 </div>
                             </div>
                         </div>

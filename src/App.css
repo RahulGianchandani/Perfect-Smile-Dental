@@ -46,6 +46,10 @@ body {
   z-index: 200;
 }
 
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none;
+}
+
 #google_translate_element span {
   display: none;
 }
@@ -160,10 +164,17 @@ footer .whatsappICON {
   padding: 5px;
   bottom: 15px;
   left: 15px;
-
 }
 
 /************ FOOTER ENDS  ************/
+
+#appointFormSec label::before {
+  content: "*";
+  color: rgb(255, 0, 0);
+  margin-right: 5px;
+  font-weight: bolder;
+}
+
 
 
 /************ HOME LANDING PAGE   ************/
@@ -542,6 +553,7 @@ textarea {
 .react-datepicker-popper {
   z-index: 200 !important;
 }
+
 #appointSec .appointDiv {
   padding: 60px 5% 70px;
   background-color: #3043b8;
@@ -668,6 +680,7 @@ textarea {
 
 } */
 
+
 @media (width < 768px) {
   #google_translate_element {
     top: 14px;
@@ -703,10 +716,6 @@ textarea {
     width: auto;
   }
 
-  #homePage #serviceSec .service::before {
-    background-size: contain;
-  }
-
   .vidIframe {
     height: 440px;
   }
@@ -722,6 +731,10 @@ textarea {
 @media (width < 450px) {
   .vidIframe {
     height: 350px;
+  }
+
+  #homePage #serviceSec .service::before {
+    background-size: contain;
   }
 
 }

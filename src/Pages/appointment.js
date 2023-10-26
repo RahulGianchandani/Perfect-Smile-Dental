@@ -3,6 +3,8 @@ import { Step, Stepper } from "react-form-stepper";
 import moment from "moment";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import setHours from "date-fns/setHours";
+import setMinutes from "date-fns/setMinutes";
 const Appointment = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [serviceSelect, setServiceSelect] = useState(0);
@@ -69,11 +71,11 @@ const Appointment = () => {
       </header>
 
       <section id="appointFormSec">
-        <h1 className="text-center h1 theme-blue-color  mb-24 pt-32 max-md:pt-14 max-md:mb-10">
+        <h1 className="text-center h1 theme-blue-color  mb-6 pt-10 max-md:pt-14 max-md:mb-10">
           לקבוע פגישה
         </h1>
-        <div className="container pb-36 max-md:pb-12">
-          <Stepper activeStep={currentPage} className="mb-14 max-md:mb-6">
+        <div className="container pb-14 max-md:pb-12">
+          <Stepper activeStep={currentPage} className="mb-7 max-md:mb-6">
             <Step label="שירותים" className="step1" />
             <Step label="תאריך ומיקום" className="step2" />
             <Step label="פרטים" className="step3" />
@@ -88,7 +90,7 @@ const Appointment = () => {
                 <div className="container max-w-[1350px]">
                   <div
                     id="treatments"
-                    className="grid grid-cols-3 gap-5 max-sm:grid-cols-1"
+                    className="grid  lg:grid-cols-2 xl:grid-cols-3 gap-5 max-sm:grid-cols-1"
                   >
                     <div
                       className={`service service1  duration-300 h-52 ${serviceSelect === 1 && "SelectedService"
@@ -100,7 +102,7 @@ const Appointment = () => {
                       }}
                     >
                       <div className="relative mainTextDiv">
-                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                        <h6 className="text-white text-center h2 !mt-8 mb-6">
                           השתלת שיניים בפה
                         </h6>
                         <div className="text-white text-center textDiv "></div>
@@ -116,7 +118,7 @@ const Appointment = () => {
                       }}
                     >
                       <div className="relative mainTextDiv">
-                        <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
+                        <h6 className="text-white text-center h2 xl:mt-8 mb-6 max-xl:mt-8">
                           השתלת בזאל
                         </h6>
                         <div className="text-white text-center textDiv "></div>
@@ -132,7 +134,7 @@ const Appointment = () => {
                       }}
                     >
                       <div className="relative mainTextDiv">
-                        <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
+                        <h6 className="text-white text-center h2 xl:mt-8 mb-6 max-xl:mt-8">
                           כתרי זירקוניה
                         </h6>
                         <div className="text-white text-center textDiv "></div>
@@ -148,7 +150,7 @@ const Appointment = () => {
                       }}
                     >
                       <div className="relative mainTextDiv">
-                        <h6 className="text-white text-center h2 xl:mt-3 mb-6 max-xl:mt-8">
+                        <h6 className="text-white text-center h2 xl:mt-8 mb-6 max-xl:mt-8">
                           סריקת סי טי
                         </h6>
                         <div className="text-white text-center textDiv "></div>
@@ -164,7 +166,7 @@ const Appointment = () => {
                       }}
                     >
                       <div className="relative mainTextDiv">
-                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                        <h6 className="text-white text-center h2 !mt-8 mb-6">
                           יישור שיניים שקוף
                         </h6>
                         <div className="text-white text-center textDiv "></div>
@@ -180,7 +182,7 @@ const Appointment = () => {
                       }}
                     >
                       <div className="relative mainTextDiv">
-                        <h6 className="text-white text-center h2 mt-3 mb-6">
+                        <h6 className="text-white text-center h2 !mt-8 mb-6">
                           צילום פנורמה
                         </h6>
                         <div className="text-white text-center textDiv "></div>
@@ -208,6 +210,8 @@ const Appointment = () => {
                         onChange={(date) => setDate(date)}
                         showTimeSelect
                         minDate={new Date()}
+                        minTime={setHours(setMinutes(new Date(), 0), 8)}
+                        maxTime={setHours(setMinutes(new Date(), 0), 16)}
                         timeFormat="HH:mm"
                         timeIntervals={15}
                         onKeyDown={(e) => {
@@ -329,18 +333,25 @@ const Appointment = () => {
 
                       <section id="formSec" className=" bg-[#ffffff12] mt-4">
                         <div className="container pt-16 pb-10 max-md:pb-2">
-                          <div className="d-flex justify-center gap-16">
+                          <div className="d-flex justify-center gap-16 text-right">
                             <form className=" bg-slate-400  ">
-                              {/* <label for="fname">First Name</label> */}
+                              <label for="fname">שם פרטי</label>
                               <input
+                                required
+                                className=""
+                                dir="rtl"
                                 type="text"
                                 id="fname"
                                 name="fname"
                                 placeholder="השם שלך.."
                                 onChange={handleChange}
                               />
-                              {/* <label for="lname">Last Name</label> */}
+
+                              <label for="lname">שם משפחה</label>
                               <input
+                                required
+                                className=""
+                                dir="rtl"
                                 type="text"
                                 id="lname"
                                 name="lname"
@@ -348,8 +359,11 @@ const Appointment = () => {
                                 onChange={handleChange}
                               />
 
-                              {/* <label for="topic">Topic</label> */}
+                              <label for="topic">נוֹשֵׂא</label>
                               <input
+                                required
+                                className=""
+                                dir="rtl"
                                 type="email"
                                 id="email"
                                 name="email"
@@ -357,10 +371,12 @@ const Appointment = () => {
                                 onChange={handleChange}
                               />
 
-                              {/* <label for="subject">Subject</label> */}
+                              <label for="subject">נושא</label>
                               <textarea
+                                required
+                                dir="rtl"
                                 id="subject"
-                                className=" h-40 mb-16"
+                                className=" h-40 mb-16 "
                                 name="messege"
                                 placeholder="כתוב הודעה.."
                                 onChange={handleChange}
