@@ -46,13 +46,13 @@ body {
   z-index: 200;
 }
 
-.VIpgJd-ZVi9od-ORHb-OEVmcd {
+/* .VIpgJd-ZVi9od-ORHb-OEVmcd {
   display: none;
 }
 
 #google_translate_element span {
   display: none;
-}
+} */
 
 /************ HEADER  ************/
 .header {
@@ -168,10 +168,10 @@ footer .whatsappICON {
 
 /************ FOOTER ENDS  ************/
 
-#appointFormSec label::before {
+#appointFormSec label:where([for=num])::after {
   content: "*";
   color: rgb(255, 0, 0);
-  margin-right: 5px;
+  margin-left: 5px;
   font-weight: bolder;
 }
 
@@ -489,9 +489,15 @@ button:hover::after {
 
 }
 
+#appointFormSec input::-webkit-outer-spin-button,
+#appointFormSec input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 #formSec input[type=text],
 #formSec input[type=email],
+#formSec input[type=number],
 select,
 textarea {
   width: 100%;

@@ -11,22 +11,24 @@ const Appointment = () => {
   const [serviceName, setServiceName] = useState("");
   const [clinicName, setClinicName] = useState("");
   const [mapSelect, setMapSelect] = useState(0);
+  const [msg, setMsg] = useState(false);
   const [date, setDate] = useState(
     new Date()
   );
-  console.log(date);
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
     email: "",
+    num: "",
     messege: "",
   });
+  console.log(formData);
+  console.log("msg", msg);
   useEffect(() => {
     const href = window.location.href.substring(
       window.location.href.lastIndexOf('#') + 1
     );
     const element = document.getElementById(href);
-    console.log("element", element);
     setTimeout(() => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -44,6 +46,8 @@ const Appointment = () => {
   const handleNext = () => {
     if (currentPage != 2) {
       setCurrentPage(currentPage + 1)
+    } else if (currentPage === 2 && formData?.num === "") {
+      setMsg(true)
     } else {
       alert("EMAIL SEND IS REMAINING ONLY, THANKS")
     }
@@ -96,9 +100,9 @@ const Appointment = () => {
                       className={`service service1  duration-300 h-52 ${serviceSelect === 1 && "SelectedService"
                         }`}
                       onClick={() => {
-                        setServiceName("Mouth dental implant");
-                        setServiceSelect(1);
-                        handleNext();
+                        serviceSelect === 1 ? setServiceName("") : setServiceName("Mouth dental implant");
+                        serviceSelect === 1 ? setServiceSelect(0) : setServiceSelect(1);
+                        serviceSelect !== 1 && handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -112,9 +116,9 @@ const Appointment = () => {
                       className={`service service2  duration-300 h-52 ${serviceSelect === 2 && "SelectedService"
                         }`}
                       onClick={() => {
-                        setServiceName("BASAL GRAFT");
-                        setServiceSelect(2);
-                        handleNext();
+                        serviceSelect === 2 ? setServiceName("") : setServiceName("BASAL GRAFT");
+                        serviceSelect === 2 ? setServiceSelect(0) : setServiceSelect(2);
+                        serviceSelect !== 2 && handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -128,9 +132,9 @@ const Appointment = () => {
                       className={`service service3  duration-300 h-52 ${serviceSelect === 3 && "SelectedService"
                         }`}
                       onClick={() => {
-                        setServiceName("Zirconia crowns");
-                        setServiceSelect(3);
-                        handleNext();
+                        serviceSelect === 3 ? setServiceName("") : setServiceName("Zirconia crowns");
+                        serviceSelect === 3 ? setServiceSelect(0) : setServiceSelect(3);
+                        serviceSelect !== 3 && handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -144,9 +148,9 @@ const Appointment = () => {
                       className={`service service4  duration-300 h-52 ${serviceSelect === 4 && "SelectedService"
                         }`}
                       onClick={() => {
-                        setServiceName("CT scan");
-                        setServiceSelect(4);
-                        handleNext();
+                        serviceSelect === 4 ? setServiceName("") : setServiceName("CT scan");
+                        serviceSelect === 4 ? setServiceSelect(0) : setServiceSelect(4);
+                        serviceSelect !== 4 && handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -160,9 +164,9 @@ const Appointment = () => {
                       className={`service service5  duration-300 h-52 ${serviceSelect === 5 && "SelectedService"
                         }`}
                       onClick={() => {
-                        setServiceName("Transparent orthodontics");
-                        setServiceSelect(5);
-                        handleNext();
+                        serviceSelect === 5 ? setServiceName("") : setServiceName("Transparent orthodontics");
+                        serviceSelect === 5 ? setServiceSelect(0) : setServiceSelect(5);
+                        serviceSelect !== 5 && handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -176,9 +180,9 @@ const Appointment = () => {
                       className={`service service6  duration-300 h-52 b ${serviceSelect === 6 && "SelectedService"
                         }`}
                       onClick={() => {
-                        setServiceName("Panorama photography");
-                        setServiceSelect(6);
-                        handleNext();
+                        serviceSelect === 6 ? setServiceName("") : setServiceName("Panorama photography");
+                        serviceSelect === 6 ? setServiceSelect(0) : setServiceSelect(6);
+                        serviceSelect !== 6 && handleNext();
                       }}
                     >
                       <div className="relative mainTextDiv">
@@ -228,9 +232,9 @@ const Appointment = () => {
                       <div className="d-flex gap-5">
                         <div
                           onClick={() => {
-                            setClinicName("North, Tamra North Road");
-                            setMapSelect(1);
-                            handleNext();
+                            mapSelect === 1 ? setClinicName("") : setClinicName("North, Tamra North Road");
+                            mapSelect === 1 ? setMapSelect(0) : setMapSelect(1);
+                            mapSelect !== 1 && handleNext();
                           }}
                           className="col mapsDiv relative"
                         >
@@ -247,11 +251,9 @@ const Appointment = () => {
                         </div>
                         <div
                           onClick={() => {
-                            setClinicName(
-                              "The Center, 96 Zeytim St Givat Shmuel Or building in Givat"
-                            );
-                            setMapSelect(2);
-                            handleNext();
+                            mapSelect === 2 ? setClinicName("") : setClinicName("The Center, 96 Zeytim St Givat Shmuel Or building in Givat");
+                            mapSelect === 2 ? setMapSelect(0) : setMapSelect(2);
+                            mapSelect !== 2 && handleNext();
                           }}
                           className="col mapsDiv relative"
                         >
@@ -268,11 +270,9 @@ const Appointment = () => {
                         </div>
                         <div
                           onClick={() => {
-                            setClinicName(
-                              "North, Ha-Atsma'ut St 16"
-                            );
-                            setMapSelect(3);
-                            handleNext();
+                            mapSelect === 3 ? setClinicName("") : setClinicName("North, Ha-Atsma'ut St 16");
+                            mapSelect === 3 ? setMapSelect(0) : setMapSelect(3);
+                            mapSelect !== 3 && handleNext();
                           }}
                           className="col mapsDiv relative"
                         >
@@ -337,7 +337,6 @@ const Appointment = () => {
                             <form className=" bg-slate-400  ">
                               <label for="fname">שם פרטי</label>
                               <input
-                                required
                                 className=""
                                 dir="rtl"
                                 type="text"
@@ -349,7 +348,6 @@ const Appointment = () => {
 
                               <label for="lname">שם משפחה</label>
                               <input
-                                required
                                 className=""
                                 dir="rtl"
                                 type="text"
@@ -358,22 +356,32 @@ const Appointment = () => {
                                 placeholder="שם משפחתך.."
                                 onChange={handleChange}
                               />
-
-                              <label for="topic">נוֹשֵׂא</label>
+                              <label for="num">מספר טלפון נייד</label>
                               <input
                                 required
+                                className="mb-0"
+                                dir="rtl"
+                                type="number"
+                                id="num"
+                                name="num"
+                                placeholder="הכנס את המספר שלך.."
+                                onChange={(e) => { setMsg(false); handleChange(e); }}
+                              />
+                              <p className={`text-red-600 text-sm mb-0.5 ${msg ? "opacity-100" : "opacity-0"}`}>Please enter Number to proceed</p>
+                              <label for="email">אימייל</label>
+                              <input
                                 className=""
                                 dir="rtl"
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="האימייל שלך.."
+                                placeholder="הכנס את האימייל שלך.."
                                 onChange={handleChange}
                               />
 
                               <label for="subject">נושא</label>
                               <textarea
-                                required
+
                                 dir="rtl"
                                 id="subject"
                                 className=" h-40 mb-16 "
@@ -396,15 +404,13 @@ const Appointment = () => {
             <button
               id="nxtBtn"
               className="disabled:cursor-not-allowed disabled:opacity-60"
-              disabled={
-                // (currentPage === 0 && serviceSelect === 0) ||
-                // (currentPage === 1 && mapSelect === 0) ||
-                (currentPage === 2 &&
-                  (formData?.fname === "" ||
-                    formData?.lname === "" ||
-                    formData?.email === "" ||
-                    formData?.messege === ""))
-              }
+              // disabled={
+              //   // (currentPage === 0 && serviceSelect === 0) ||
+              //   // (currentPage === 1 && mapSelect === 0) ||
+              //   (currentPage === 2 &&
+              //     formData?.num === ""
+              //   )
+              // }
               onClick={() => handleNext()}
             >
               {currentPage === 2 ? "סיים" : "הַבָּא"}
