@@ -1,11 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Step, Stepper } from "react-form-stepper";
 import moment from "moment";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import setHours from "date-fns/setHours";
 import setMinutes from "date-fns/setMinutes";
+import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Appointment = () => {
+
+  const form = useRef();
+
+
   const [currentPage, setCurrentPage] = useState(0);
   const [serviceSelect, setServiceSelect] = useState(0);
   const [serviceName, setServiceName] = useState("");
@@ -43,14 +50,39 @@ const Appointment = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+
+
   const handleNext = () => {
     if (currentPage != 2) {
       setCurrentPage(currentPage + 1)
     } else if (currentPage === 2 && formData?.num === "") {
       setMsg(true)
     } else {
-      alert("EMAIL SEND IS REMAINING ONLY, THANKS")
+      sendEmail()
     }
+  };
+  const sendEmail = () => {
+    let newFormData = {
+      ...formData, serviceName: serviceName, clinicName: clinicName, date: moment(date).format("MMMM Do YYYY, h:mm:ss a")
+    }
+    console.log("newFormData", newFormData);
+    // emailjs.send('service_v3suaqc', 'template_7mw67vi', newFormData, '3MTx8xOaBj7x9EZhw')
+    emailjs.send('service_4xwjyqn', 'template_ntja4hj', newFormData, 'qLT230UnMVO7RSASr')
+      .then((result) => {
+        console.log(result.text);
+        toast.success('Email Sent Successfully!', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      }, (error) => {
+        console.log(error.text);
+      });
   };
 
   return (
@@ -334,7 +366,7 @@ const Appointment = () => {
                       <section id="formSec" className=" bg-[#ffffff12] mt-4">
                         <div className="container pt-16 pb-10 max-md:pb-2">
                           <div className="d-flex justify-center gap-16 text-right">
-                            <form className=" bg-slate-400  ">
+                            <form ref={form} onSubmit={sendEmail} className=" bg-slate-400  ">
                               <label for="fname">שם פרטי</label>
                               <input
                                 className=""
@@ -379,11 +411,11 @@ const Appointment = () => {
                                 onChange={handleChange}
                               />
 
-                              <label for="subject">נושא</label>
+                              <label for="messege">נושא</label>
                               <textarea
 
                                 dir="rtl"
-                                id="subject"
+                                id="messege"
                                 className=" h-40 mb-16 "
                                 name="messege"
                                 placeholder="כתוב הודעה.."

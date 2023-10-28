@@ -17,7 +17,7 @@ import PanoramaPhotography from './Pages/services/panoramaPhotography';
 import CTScan from './Pages/services/ctScan';
 import BasalGraft from './Pages/services/basalGraft';
 import ScrollToTop from './Components/scrollTop';
-
+import { ToastContainer } from 'react-toastify';
 
 export default function App() {
   return (
@@ -40,6 +40,7 @@ export default function App() {
         </Routes>
       </ScrollToTop>
       <Footer />
+      <ToastContainer />
     </Router>
   );
 }
