@@ -8,6 +8,7 @@ import setMinutes from "date-fns/setMinutes";
 import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
 const Appointment = () => {
 
   const form = useRef();
@@ -22,6 +23,7 @@ const Appointment = () => {
   const [date, setDate] = useState(
     new Date()
   );
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -80,6 +82,7 @@ const Appointment = () => {
           progress: undefined,
           theme: "light",
         });
+        navigate("/")
       }, (error) => {
         console.log(error.text);
       });
